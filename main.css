@@ -6,3 +6,12 @@ body {
     background-color: #333;
     color: whitesmoke;
 }
+/* Change color for unvisited (hyperlinks) links */
+a {
+    color: red; /* Change to the desired color */
+  }
+
+  /* Change color for visited links */
+  a:visited {
+    color: rgb(179, 234, 179); /* Change to the desired color */
+  }
