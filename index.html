@@ -13,37 +13,88 @@
     </head>
 
     <body>
+
         <h1>Mateusz Kacperski</h1>
         <p>Self taught full stack developer</p>
-        <!--'&nbsp' Space line over just a little bit-->
-        <p><u>&nbsp;My stories</u></p>
-
+        
         <!--A horizontal rule-->
         <hr>
 
-        <h2>Year 0 - 2</h2>
-        <!-- '<abbr title=""' is a Tool tip-->
-        <p><abbr title="I learn C++ from www.learncpp.com and C++ Primer Plus 6th Edition 2011.">Learn how to code in C++ </abbr><br><a href="https://github.com/Oureyelet/Xcode-C-Plus-Plus-Primer-Plus-Sixth-Sdition-Developers-Library-S-Prata-" target="_blank">GitHub repo with my C++ code</a></p>
+        <section><!--Section about navigation links-->
+            <p>Navigation links:</p>
+            <nav>
+                <ul>
+                    <li><a href="my_storie.html">My journey to becoming a full stack developer</a></li>
+                    <li><a href="#exp">Section about my experiences</a></li>
+                    <li><a href="#html">Section about all html's abilities I have learned</a></li>
+                    <li><a href="#footer">Footer</a></li>
+                </ul>
+            </nav>
+        </section>
 
-        <p>List of resources I have used to learn c++:</p>
-        <ol> <!--Use <ul> to unorderd bullet point list-->
-            <li>www.learncpp.com</li>
-            <li>C++ Primer Plus 6th Edition 2011 Stephen Prata</li>
-            <li>Youtube tutorials</li>
-            <li>https://en.cppreference.com/w/cpp</li>
-            <li>GitHub repositories</li>
-            
+        <section id="exp"><!--Section about my experiences-->
 
+            <!--A horizontal rule-->
+            <hr>
 
-        </ol>
+            <h2>Year 0 - 2</h2>
+            <!-- '<abbr title=""' is a Tool tip-->
+            <p><abbr title="I learn C++ from www.learncpp.com and Stephen Prata C++ Primer Plus 6th Edition 2011">Learn how to code in C++ </abbr>
+                <!--'&nbsp' is like pace/tab -->
+                &nbsp;<a href="https://github.com/Oureyelet/Xcode-C-Plus-Plus-Primer-Plus-Sixth-Sdition-Developers-Library-S-Prata-" target="_blank"><i>(GitHub repo with my C++ code)</i></a></p>
 
-        <h2>Year 2 - <i>present</i></h2>
-        <p>Create static website portfolio </p>
+            <p>List of resources I have used to learn c++:</p>
+            <ol> <!--Use <ul> to unorderd bullet point list-->
+                <li>www.learncpp.com</li>
+                <li>C++ Primer Plus 6th Edition 2011 Stephen Prata</li>
+                <li>Youtube tutorials</li>
+                <li>https://en.cppreference.com/w/cpp</li>
+                <li>GitHub repositories</li>
+            </ol>
 
-        <!--A horizontal rule-->
-        <hr>
-        &lt;&lt;&lt; &copy; Mateusz Kacperski &gt;&gt;
-        &gt;
+            <h2>Year 2 - <i>present</i></h2>
+            <p>Learn how to code in HTML, CSS and JS for create my first static webside - Portfolio </p>
+
+        </section>
+
+        <section id="html"><!--Section about all html's abilities I have learned-->
+
+            <h2>HTML's ability:</h2>
+
+            <!--Description list-->
+            <dl>
+                <dt>I am description term</dt>
+                <dd>... and I am description detail</dd>
+            </dl>
+
+            <!--Hyper text - links-->
+            <a href="https://github.com/Oureyelet/" target="_blank">I am hyper link to Mateusz's GitHub repositorie</a>
+
+            <!--Shortcut to difrent area of the page-->
+
+        </section>
+
+        <section><!--Section about "Back to TOP" also see CSS with: "Aligning text content to the right within an element"-->
+
+        <p>
+            <a href="#"><div class="right-aligned-text">Back to TOP</div></a>
+        </p>
+        
+        </section>
+
+        <section id="footer"><!--Section about footer-->
+
+            <!--A horizontal rule-->
+            <hr>
+
+            &lt;&lt;&lt; 2023 &copy; Mateusz Kacperski &gt;&gt;
+            &gt;
+
+            <!--A horizontal rule-->
+            <hr>
+
+        </section>
+
     </body>
 
 </html>
