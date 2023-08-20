@@ -21,12 +21,12 @@
         <hr>
 
         <section><!--Section about navigation links-->
-            <p>Navigation links:</p>
+            <h4>Navigation links:</h4>
             <nav>
                 <ul>
                     <li><a href="my_storie.html">My journey to becoming a full stack developer</a></li>
-                    <li><a href="#exp">Section about my experiences</a></li>
-                    <li><a href="#html">Section about all html's abilities I have learned</a></li>
+                    <li><a href="#exp">My experiences</a></li>
+                    <li><a href="#html">HTML's abilities I have learned</a></li>
                     <li><a href="#footer">Footer</a></li>
                 </ul>
             </nav>
@@ -43,7 +43,7 @@
                 <!--'&nbsp' is like pace/tab -->
                 &nbsp;<a href="https://github.com/Oureyelet/Xcode-C-Plus-Plus-Primer-Plus-Sixth-Sdition-Developers-Library-S-Prata-" target="_blank"><i>(GitHub repo with my C++ code)</i></a></p>
 
-            <p>List of resources I have used to learn c++:</p>
+            <p>Resources I've used to learn C++:</p>
             <ol> <!--Use <ul> to unorderd bullet point list-->
                 <li>www.learncpp.com</li>
                 <li>C++ Primer Plus 6th Edition 2011 Stephen Prata</li>
@@ -62,33 +62,61 @@
             <h2>HTML's ability:</h2>
 
             <!--Description list-->
-            <dl>
-                <dt>I am description term</dt>
-                <dd>... and I am description detail</dd>
-            </dl>
+            <ul>
+                <li>
+                    <dl>
+                        <dt>I am description term</dt>
+                        <dd>... and I am description detail</dd>
+                    </dl>
+                </li>
+            </ul>
 
             <!--Hyper text - links-->
-            <a href="https://github.com/Oureyelet/" target="_blank">I am hyper link to Mateusz's GitHub repositorie</a>
+            <ul>
+                <li>
+                    <a href="https://github.com/Oureyelet/" target="_blank">I am hyper link to Mateusz's GitHub repository</a>
+                </li>
+            </ul>
 
-            <!--Shortcut to difrent area of the page-->
+            <!--Download link-->
+            <ul>
+                <li>
+                    Here is link for download something:
+                    <a href="head_icon.png" download>Head icon</a>
+                </li>
+            </ul>
+
+            <!--Link to email address-->
+            <ul>
+                <li>
+                    Contact me at 
+                    <a href="mailto:oureyelet@gmail.com">my email address</a>
+                </li>
+            </ul>
 
         </section>
 
         <section><!--Section about "Back to TOP" also see CSS with: "Aligning text content to the right within an element"-->
-
-        <p>
-            <a href="#"><div class="right-aligned-text">Back to TOP</div></a>
-        </p>
-        
+                <div class="right-aligned-text">
+                    <h5>
+                        <a href="#">Back to TOP</a>
+                    </h5>
+                </div>    
         </section>
 
         <section id="footer"><!--Section about footer-->
 
+            <h2>&nbsp;</h2> <!--This is for fix semantic error i had-->
+
             <!--A horizontal rule-->
             <hr>
 
-            &lt;&lt;&lt; 2023 &copy; Mateusz Kacperski &gt;&gt;
-            &gt;
+            
+            <div class="centered-text small-text">
+                <a href="mailto:oureyelet@gmail.com">oureyelet@gmail.com</a>
+                <a href="tel:+447842670579">+447842670579</a>
+            </div>
+            <div class="centered-text small-text">&copy;2023 Mateusz Kacperski | All Rights Reserved</div>
 
             <!--A horizontal rule-->
             <hr>
