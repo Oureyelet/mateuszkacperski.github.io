@@ -1,8 +1,13 @@
-# HTML-Project
+# Portfolio
+
+https://oureyelet.github.io/mateuszkacperski.github.io/
 
 Hi everyone !
 
-This will be  my first HTML project I ever done - also this will be my first portfolio.
+This will be  my first portfolio project I ever done - also this will be my first project with html, css and js.
 
-Kind Regards,
-Mateusz :)
+I will keep you updated here... 
+
+Have a lovly day for everyone !
+
+Mateusz
