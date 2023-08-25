@@ -38,6 +38,7 @@
                     <li><a href="#resume">My resume</a></li>
                     <li><a href="#exp">My non-commercial experiences</a></li>
                     <li><a href="#html">HTML's abilities I have learned</a></li>
+                    <li><a href="#contact">Contact me</a></li>
                     <li><a href="#footer">Footer</a></li>
                 </ul>
             </nav>
@@ -94,7 +95,7 @@
             <!--A horizontal rule-->
             <hr>
 
-            <h2><mark>HTML's ability:</mark></h2>
+            <h2><mark>HTML's abilities</mark></h2>
 
             <!--Description list-->
             <ul>
@@ -160,31 +161,34 @@
             <ul>
                 <li>
                     <table>
+
                         <caption>My Daily Schedule</caption>
+
                         <thead>
                             <tr>
-                                <th>Time</th><!--Table header-->
-                                <th>Activity</th><!--Table header-->
+                                <th scope="col">Time</th><!--Table header-->
+                                <th scope="col">Activity</th><!--Table header-->
                             </tr>
                         </thead>
+
                         <tbody>
                             <tr> <!--Table row-->
                                 <td> <!--Table data-->
                                     <time datetime="05:10">5:10am</time> - <time datetime="06:10">6:10am</time>
-                                <td>Write Code</td>
                                 </td>
+                                <td>Write Code</td>
                             </tr>
                             <tr> <!--Table row-->
                                 <td> <!--Table data-->
                                     <time datetime="06:45">6:45am</time> - <time datetime="16:30">4:30pm</time>
-                                <td>Team Leading Work - Niftylift</td>
                                 </td>
+                                <td>Team Leading Work - Niftylift</td>
                             </tr>
                             <tr> <!--Table row-->
                                 <td> <!--Table data-->
                                     <time datetime="17:05">5:05pm</time> - <time datetime="21:40">9:40pm</time>
-                                <td>Family home time</td>
                                 </td>
+                                <td>Family home time</td>
                             </tr>
                             <tr>
                                 <td rowspan="2">All Other Times</td>
@@ -194,24 +198,45 @@
                                 <td>Sleep Time</td>
                             </tr>
                         </tbody>
+
                         <tfoot>
                             <tr>
                                 <td colspan="2">Follow Jezus with you whole heart and you will be safe.</td>
                             </tr>
                         </tfoot>
+
                     </table>
                 </li>
             </ul>
 
         </section>
 
-        <section>
-            <!--Section about "Back to TOP" also see CSS with: "Aligning text content to the right within an element"-->
+        <article id="contact">
+
+            <!--A horizontal rule-->
+            <hr>
+
+            <h2><mark>Contact me</mark></h2>
+            <p>I'd really like to hear from you!</p>
+
+            <form action="https://httpbin.org/get" method="get">
+                <label for="firstname">First Name:</label>
+                <input type="text" name="firstname" id="firstname" placeholder="Your name" autocomplete="off" required autofocus>
+            </form>
+
+
+        </article>
+
+        <section><!--Section about "Back to TOP" also see CSS with: "Aligning text content to the right within an element"-->
+            
+            
+            
             <div class="right-aligned-text">
                 <h5>
                     <a href="#">Back to TOP</a>
                 </h5>
             </div>
+
         </section>
 
     </main>
