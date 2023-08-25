@@ -31,17 +31,25 @@ a {
     color: whitesmoke;
   }
 
-  /*Horizontally center text*/
-  .centered-text {
-    text-align: center;
-  }
+/*Horizontally center text*/
+.centered-text {
+  text-align: center;
+}
 
-  /*To center an image*/
-  .centered-image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* eight: 100vh; /* Optional: Set a specific height if needed */
-  }
+/*To center an image*/
+.centered-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* eight: 100vh; /* Optional: Set a specific height if needed */
+}
+
+/*Table*/
+table, tr, th, td, caption {
+  border: 1px solid #eee;
+  font-family: 'Courier New', Courier, monospace;
+  border-collapse: collapse;
+  padding: 0.5rem;
+}
   
 
