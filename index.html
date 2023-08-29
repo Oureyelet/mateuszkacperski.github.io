@@ -211,7 +211,7 @@
 
         </section>
 
-        <article id="contact">
+        <article id="contact"><!--Acticule about "Contact me"-->
 
             <!--A horizontal rule-->
             <hr>
@@ -220,10 +220,53 @@
             <p>I'd really like to hear from you!</p>
 
             <form action="https://httpbin.org/get" method="get">
-                <label for="firstname">First Name:</label>
-                <input type="text" name="firstname" id="firstname" placeholder="Your name" autocomplete="off" required autofocus>
-            </form>
 
+            <p>
+                <label for="firstname">First Name:</label>
+                <input type="text" name="firstname" id="firstname" placeholder="Your Firstname" autocomplete="off" required autofocus>
+            </p>
+
+            <p>
+                <label for="lastname">Last Name:</label>
+                <input type="text" name="lastname" id="lastname" placeholder="Your Lastname" autocomplete="off" required>
+            </p>
+
+            <p>
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password" placeholder="Your Password" required>
+            </p>
+
+            <p>
+                <label for="phone">Password:</label>
+                <input type="tel" name="phone" id="phone" placeholder="5555555555" pattern="[0-9]{4}[0-9]{3}[0-9]{3}" required>
+            </p>
+
+            <p>
+                <label for="decade">Favorite Decate:</label>
+                <input type="number" name="decade" id="decade" min="1950" max="2023" step="10" value="1980">
+            </p>
+
+            <p>
+                <label for="coffee">Favorite Coffee:</label>
+                <select name="coffee" id="coffee">
+
+                    <optgroup label="Coffee">
+                        <option value="regular coffee">Regular Coffee</option>
+                        <option value="latte">Latte</option>
+                    </optgroup>
+
+                    <optgroup label="Espresso Drinks">
+                        <option value="ice coffee">Ice Coffee</option>
+                        <option value="cappuccino">Cappuccino</option>
+                        <option value="cortado" selected>Cortado</option>
+                        <option value="americano">Americano</option>
+                    </optgroup>
+                    
+                    <option value="orther">Other</option>
+                </select>
+            </p>
+
+            </form>
 
         </article>
 
