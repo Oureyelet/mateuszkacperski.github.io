@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> <!--3:02-->
 
 <html lang="en">
 
@@ -209,6 +209,13 @@
                 </li>
             </ul>
 
+            <!--Input options-->
+            <ul>
+                <li>
+                    <form action=""></form>
+                </li>
+            </ul>
+
         </section>
 
         <article id="contact"><!--Acticule about "Contact me"-->
@@ -219,53 +226,74 @@
             <h2><mark>Contact me</mark></h2>
             <p>I'd really like to hear from you!</p>
 
-            <form action="https://httpbin.org/get" method="get">
+            <form action="process-form.php" method="post">
+                <fieldset>
 
-            <p>
-                <label for="firstname">First Name:</label>
-                <input type="text" name="firstname" id="firstname" placeholder="Your Firstname" autocomplete="off" required autofocus>
-            </p>
+                    <legend>Personal information</legend>
 
-            <p>
-                <label for="lastname">Last Name:</label>
-                <input type="text" name="lastname" id="lastname" placeholder="Your Lastname" autocomplete="off" required>
-            </p>
+                    <p>
+                        <label for="firstname">First Name:</label>
+                        <input type="text" name="firstname" id="firstname" placeholder="Your Firstname" autocomplete="off" required autofocus>
+                    </p>
 
-            <p>
-                <label for="password">Password:</label>
-                <input type="password" name="password" id="password" placeholder="Your Password" required>
-            </p>
+                    <p>
+                        <label for="lastname">Last Name:</label>
+                        <input type="text" name="lastname" id="lastname" placeholder="Your Lastname" autocomplete="off" required>
+                    </p>
 
-            <p>
-                <label for="phone">Password:</label>
-                <input type="tel" name="phone" id="phone" placeholder="5555555555" pattern="[0-9]{4}[0-9]{3}[0-9]{3}" required>
-            </p>
+                    <p>
+                        <label for="password">Password:</label>
+                        <input type="password" name="password" id="password" placeholder="Your Password" required>
+                    </p>
 
-            <p>
-                <label for="decade">Favorite Decate:</label>
-                <input type="number" name="decade" id="decade" min="1950" max="2023" step="10" value="1980">
-            </p>
+                    <p>
+                        <label for="phone">Telephone number:</label>
+                        <input type="tel" name="phone" id="phone" placeholder="5555555555" pattern="[0-9]{4}[0-9]{3}[0-9]{3}" required>
+                    </p>
 
-            <p>
-                <label for="coffee">Favorite Coffee:</label>
-                <select name="coffee" id="coffee">
+                    <p>
+                        <label for="decade">Favorite Decate:</label>
+                        <input type="number" name="decade" id="decade" min="1950" max="2023" step="10" value="1980">
+                    </p>
 
-                    <optgroup label="Coffee">
-                        <option value="regular coffee">Regular Coffee</option>
-                        <option value="latte">Latte</option>
-                    </optgroup>
+                    <p>
+                        <label for="coffee">Favorite Coffee:</label>
+                            <select name="coffee" id="coffee" multiple size="5">
 
-                    <optgroup label="Espresso Drinks">
-                        <option value="ice coffee">Ice Coffee</option>
-                        <option value="cappuccino">Cappuccino</option>
-                        <option value="cortado" selected>Cortado</option>
-                        <option value="americano">Americano</option>
-                    </optgroup>
-                    
-                    <option value="orther">Other</option>
-                </select>
-            </p>
+                                <optgroup label="Coffee">
+                                    <option value="regular coffee">Regular Coffee</option>
+                                    <option value="latte">Latte</option>
+                                </optgroup>
 
+                                <optgroup label="Espresso Drinks">
+                                    <option value="ice coffee">Ice Coffee</option>
+                                    <option value="cappuccino">Cappuccino</option>
+                                    <option value="cortado" selected>Cortado</option>
+                                    <option value="americano">Americano</option>
+                                </optgroup>
+
+                                <option value="orther">Other</option>
+                            </select>
+                    </p>
+
+                    <p>
+                        <label for="music">Favorise music:</label>
+                        <input type="text" name="music" id="music" list="music-list">
+                        <datalist id="music-list">
+
+                            <option value="Hit-Hop">
+                            <option value="Metal">
+                            <option value="Christian's music">
+                            <option value="Gospel">
+                            <option value="Jazz">
+
+                        </datalist>
+                    </p>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>What is your</legend>
+                </fieldset>
             </form>
 
         </article>
