@@ -212,7 +212,13 @@
             <!--Input options-->
             <ul>
                 <li>
-                    <form action=""></form>
+                    <form action="process-form.php" method="post">
+
+                        <fieldset>
+                            <legend>What is your</legend>
+                        </fieldset>
+
+                    </form>
                 </li>
             </ul>
 
@@ -291,14 +297,14 @@
                     </p>
 
                     <p>
-                        <input type="submit" value="Submit">
+                        <label for="message">Message:</label>
+                        <textarea name="message" id="message" placeholder="Your Message" rows="4" required></textarea>
                     </p>
 
-                </fieldset>
-                <br>
-                <fieldset>
-                    <legend>What is your</legend>
-                </fieldset>
+                    <p>
+                        <input type="submit" value="Submit">
+                    </p>
+                    
             </form>
 
         </article>
