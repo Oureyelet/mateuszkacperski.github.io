@@ -44,6 +44,10 @@ a {
   /* eight: 100vh; /* Optional: Set a specific height if needed */
 }
 
+.h2-color {
+  color: darkseagreen;
+}
+
 /*Table*/
 table, tr, th, td, caption {
   border: 1px solid #eee;
