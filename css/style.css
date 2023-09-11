@@ -2,14 +2,19 @@ html {
     font-size: 22px
 }
 
+body {
+  background-color: #333;
+  color: whitesmoke;
+  border: 7px solid rgb(255, 255, 255);
+}
+
+h1 {
+  font-size: 40px;
+}
+
 /* Adjust the size as needed */
 .small-text {
   font-size: 17px; 
-}
-
-body {
-    background-color: #333;
-    color: whitesmoke;
 }
 
 /* Change color for unvisited (hyperlinks) links */
@@ -44,10 +49,6 @@ a {
   /* eight: 100vh; /* Optional: Set a specific height if needed */
 }
 
-.h2-color {
-  color: darkseagreen;
-}
-
 /*Table*/
 table, tr, th, td, caption {
   border: 1px solid #eee;
@@ -55,5 +56,27 @@ table, tr, th, td, caption {
   border-collapse: collapse;
   padding: 0.5rem;
 }
-  
+
+/*---------------------------------*/
+
+/* Basoc type of selectors */
+
+p {
+  color: rgb(255, 255, 255);
+}
+
+.gray {
+  color: gray;
+}
+
+.h2-color {
+  color: darkseagreen;
+}
+
+.hightlight {
+  text-transform: uppercase;
+  background-color: chartreuse;
+}
+
+/*---------------------------------*/
 
