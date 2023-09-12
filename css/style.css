@@ -1,11 +1,34 @@
+.top-body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.font-control {
+  margin: 20px;
+}
+
+#font-size-range {
+  width: 200px;
+}
+
+#font-size-value {
+  display: inline-block;
+  width: 30px;
+  margin-left: 10px;
+  font-weight: bold;
+}
+
 html {
-    font-size: 22px
+  font-size: 22px;
 }
 
 body {
   background-color: #333;
   color: whitesmoke;
   border: 7px solid rgb(255, 255, 255);
+  margin-left: 2cm;
+  margin-right: 2cm;
+  padding: 20px;
 }
 
 h1 {
@@ -80,3 +103,9 @@ p {
 
 /*---------------------------------*/
 
+/*---------------------------------*/
+
+/* CSS Units */
+
+
+/*---------------------------------*/

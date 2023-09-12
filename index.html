@@ -14,9 +14,16 @@
 </head>
 
 <body>
-    <header>
+    <header class="top-body">
         <h1>Hello World, Mateusz Kacperski here !</h1>
-        <p>I'm self taught full stack developer</p>
+
+        <div class="font-control">
+            <label for="font-size-range">Font Size:</label>
+            <input type="range" id="font-size-range" min="10" max="40" step="1" value="16">
+            <span id="font-size-value">16px</span>
+        </div>
+        <p id="text-to-change">I'm self taught full stack developer</p>
+        <script src="script.js"></script>
 
         <div class="centered-image">
             <img src="img/tree-8175062_1920.jpg" alt="Genesis 2:9 'In the middle of the garden were the tree of life'"
