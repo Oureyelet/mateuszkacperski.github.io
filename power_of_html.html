@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Mateusz Kacperski">
+    <meta name="description"
+        content="This page contains all the things I am leared about html">
+    <title>HTML's abilities I have learned</title>
+    <!-- Head icon: -->
+    <link rel="icon" href="head_icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <section><!--Section about all html's abilities I have learned-->
+
+    
+        <h1 class="top-body colour-darkseagreen">Power Of Html</h1>
+
+        <!--Description list-->
+        <ul>
+            <li>
+                <dl>
+                    <dt>I am description term</dt>
+                    <dd>... and I am description detail</dd>
+                </dl>
+            </li>
+        </ul>
+
+        <!--Hyper text - links-->
+        <ul>
+            <li>
+                <a href="https://github.com/Oureyelet/" target="_blank">I am hyper link to Mateusz's GitHub
+                    repository</a>
+            </li>
+        </ul>
+
+        <!--Download link-->
+        <ul>
+            <li>
+                Here is link for download something:
+                <a href="head_icon.png" download>Head icon</a>
+            </li>
+        </ul>
+
+        <!--Link to email address-->
+        <ul>
+            <li>
+                Contact me at
+                <a href="mailto:oureyelet@gmail.com">my email address</a>
+            </li>
+        </ul>
+
+
+
+        <ul>
+            <li>
+
+                <!--The <figure> element in HTML is used to encapsulate and provide a semantic container for content that is referenced from the main content of the document. It is typically used to associate a caption or description with content, such as images, diagrams, charts, videos, code examples, etc.-->
+
+                <figure>
+
+                    <!--The <figcaption> element in HTML is used in conjunction with the <figure> element to provide a caption or description for the content within the <figure> element. It typically describes the content within the <figure> and helps provide additional context to the reader. -->
+
+                    <figcaption>Example of use figure and figcaption tags</figcaption>
+                </figure>
+            </li>
+        </ul>
+
+
+        <div>
+            <figure>
+                <img src="img/france-8178164_1280.jpg" alt="Church" title="Home" width="700" loading="lazy">
+                <figcaption>
+                    Figure and figcaption tags can also add extra descrypion just below (under) img.
+                </figcaption>
+            </figure>
+        </div>
+
+        <!--Create Tables-->
+        <ul>
+            <li>
+                <table>
+
+                    <caption>My Daily Schedule</caption>
+
+                    <thead>
+                        <tr>
+                            <th scope="col">Time</th><!--Table header-->
+                            <th scope="col">Activity</th><!--Table header-->
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr> <!--Table row-->
+                            <td> <!--Table data-->
+                                <time datetime="05:10">5:10am</time> - <time datetime="06:10">6:10am</time>
+                            </td>
+                            <td>Write Code</td>
+                        </tr>
+                        <tr> <!--Table row-->
+                            <td> <!--Table data-->
+                                <time datetime="06:45">6:45am</time> - <time datetime="16:30">4:30pm</time>
+                            </td>
+                            <td>Team Leading Work - Niftylift</td>
+                        </tr>
+                        <tr> <!--Table row-->
+                            <td> <!--Table data-->
+                                <time datetime="17:05">5:05pm</time> - <time datetime="21:40">9:40pm</time>
+                            </td>
+                            <td>Family home time</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">All Other Times</td>
+                            <td>Pray Time</td>
+                        </tr>
+                        <tr>
+                            <td>Sleep Time</td>
+                        </tr>
+                    </tbody>
+
+                    <tfoot>
+                        <tr>
+                            <td colspan="2">Matthew 16:24 "If anyone would come after me, let him deny himself and take up his cross and follow me."</td>
+                        </tr>
+                    </tfoot>
+
+                </table>
+            </li>
+        </ul>
+
+        <!--Input options-->
+
+        <ul>
+            <li>
+                <form action="https://formsubmit.co/oureyelet@email.com" method="POST">
+
+                    <fieldset>
+                        <legend>What Is Your Favorite Food?</legend>
+                        <p>
+                            <input type="radio" name="food" id="tacos" value="tacos">
+                            <label for="tacos">Tacos</label>
+                        </p>
+                        <p>
+                            <input type="radio" name="food" id="pizza" value="tacos">
+                            <label for="pizza">Pizza</label>
+                        </p>
+                        <p>
+                            <input type="radio" name="food" id="other" value="other">
+                            <label for="other">Other</label>
+                        </p>
+                    </fieldset>
+
+                    <br>
+
+                    <fieldset>
+                        <legend>Do You Have A Pets?</legend>
+                        <p>
+                            <input type="checkbox" name="pets" id="dog" value="god">
+                            <label for="dog">Dog</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" name="pets" id="cat" value="cat">
+                            <label for="cat">Cat</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" name="pets" id="fish" value="fish">
+                            <label for="fish">Fish</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" name="pets" id="otherPets" value="otherPets">
+                            <label for="otherPets">Other</label>
+                        </p>
+                    </fieldset>
+
+                    <br>
+
+                    <fieldset> 
+                        <legend>Sent Me A Note</legend>
+                        <label for="messageA">Your Message:</label>
+                        <br>
+                        <textarea name="message" id="messageA" cols="30" rows="10" placeholder="Type your message here"></textarea>
+                    </fieldset>
+                    
+                    <br>
+
+                    <button type="submit">Submit</button>
+                    <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
+                    <button type="reset">Reset</button>
+
+                </form>
+            </li>
+        </ul>
+
+        <ul>
+            <li>
+                <form action="https://formsubmit.co/oureyelet@email.com" method="POST">
+
+                    <fieldset>
+    
+                        <legend>Personal information</legend>
+    
+                        <p>
+                            <label for="firstname">First Name:</label>
+                            <input type="text" name="firstname" id="firstname" placeholder="Your Firstname" autocomplete="off" required>
+                        </p>
+    
+                        <p>
+                            <label for="lastname">Last Name:</label>
+                            <input type="text" name="lastname" id="lastname" placeholder="Your Lastname" autocomplete="off" required>
+                        </p>
+    
+                        <p>
+                            <label for="password">Password:</label>
+                            <input type="password" name="password" id="password" placeholder="Your Password" required>
+                        </p>
+    
+                        <p>
+                            <label for="phone">Telephone number:</label>
+                            <input type="tel" name="phone" id="phone" placeholder="5555555555" pattern="[0-9]{4}[0-9]{3}[0-9]{3}" required>
+                        </p>
+    
+                        <p>
+                            <label for="decade">Favorite Decate:</label>
+                            <input type="number" name="decade" id="decade" min="1950" max="2023" step="10" value="1980">
+                        </p>
+    
+                        <p>
+                            <label for="coffee">Favorite Coffee:</label>
+                                <select name="coffee" id="coffee" multiple size="5">
+    
+                                    <optgroup label="Coffee">
+                                        <option value="regular coffee">Regular Coffee</option>
+                                        <option value="latte">Latte</option>
+                                    </optgroup>
+    
+                                    <optgroup label="Espresso Drinks">
+                                        <option value="ice coffee">Ice Coffee</option>
+                                        <option value="cappuccino">Cappuccino</option>
+                                        <option value="cortado" selected>Cortado</option>
+                                        <option value="americano">Americano</option>
+                                    </optgroup>
+    
+                                    <option value="orther">Other</option>
+                                </select>
+                        </p>
+    
+                        <p>
+                            <label for="music">Favorise music:</label>
+                            <input type="text" name="music" id="music" list="music-list">
+                            <datalist id="music-list">
+    
+                                <option value="Hit-Hop">
+                                <option value="Metal">
+                                <option value="Christian's music">
+                                <option value="Gospel">
+                                <option value="Jazz">
+    
+                            </datalist>
+                        </p>
+    
+                        <p>
+                            <label for="message">Message:</label>
+                            <textarea name="message" id="message" placeholder="Your Message" cols="30" rows="10" required></textarea>
+                        </p>
+    
+                        <p>
+                            <input type="submit" value="Submit">
+                        </p>
+    
+                    </fieldset>
+                        
+                </form>
+            </li>
+        </ul>
+
+    </section>
+
+    <hr>
+    <a href="index.html">Back to Home</a>
+</body>
+
+</html>

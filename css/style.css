@@ -97,6 +97,10 @@ p {
   color: darkseagreen;
 }
 
+.colour-darkseagreen {
+  color: darkseagreen;
+}
+
 .hightlight {
   text-transform: uppercase;
   background-color: chartreuse;
