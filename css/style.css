@@ -36,6 +36,10 @@ h1 {
   font-size: 40px;
 }
 
+.h1_v2 {
+  font-size: 55px;
+}
+
 /* Adjust the size as needed */
 .small-text {
   font-size: 17px; 
@@ -122,3 +126,19 @@ p {
 
 
 /*---------------------------------*/
+
+
+.threed {
+  font-size: 3em;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  position: relative;
+  background: linear-gradient(45deg, #fff, #da4949); /* Gradient background for beveled 3D effect */
+  -webkit-background-clip: text; /* Clip text to gradient background (for WebKit browsers) */
+  background-clip: text; /* Clip text to gradient background */
+  -webkit-text-fill-color: transparent; /* Hide original text color (for WebKit browsers) */
+  padding: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a subtle text shadow for depth */
+}
