@@ -41,7 +41,19 @@
         <li>SELECT * FROM KCC.DBO.Customers WHERE CustomerName <> 'Tres Delicious' -- Display ever [Selected Data] exept specific [Colum Name] </li>
         <li>-- This is comment in SQL
             /*This is comment in SQL*/</li>
-        <li></li>
+        <li>SELECT * FROM KCC.DBO.Customers WHERE State NOT IN('WI', 'NY', 'UT'); -- Display everything exept State WI, NY, UT -- or if you leave just IN will be other way round</li>
+        <li>SELECT * FROM KCC.DBO.Customers WHERE CustomerName LIKE 'A%'; -- Display me all Customer colum with beggining letter of A</li>
+        <li>SELECT OrderID, <br>
+            OrderDate, <br>
+            OrderTotal, <br>
+            CustomerName, <br>
+            Phone <br>
+            FROM KCC.dbo.Orders <br>
+            JOIN KCC.dbo.Customers on KCC.dbo.Orders.CustomerID = KCC.dbo.Customers.CustomerID <br> -- This is how to join two table and display colums from two diffrent tables</li>
+        <li>ORDER BY [Colum Name] -- display number by order from specific colum</li>
+        <li>ORDER BY OrderTotal DESC -- Same as above just in descending order</li>
+        <li>SELECT * FROM KCC.dbo.Orders <br>
+            WHERE OrderDate <= DATEADD(month,-1,getdate()) -- function to display every time last month orders</li>
     </ul>
    </section>
 
