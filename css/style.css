@@ -24,11 +24,13 @@ html {
 body {
   background-color: #302344;
   color: whitesmoke;
-  border: 14px dotted rgb(71, 159, 74);
+  border: 14px double rgb(71, 159, 74);
   margin: 2cm;
   /* margin-left: 2cm;
   margin-right: 2cm; */
   padding: 20px;
+  outline: 25px solid rgb(67, 77, 112);
+  outline-offset: 22px;
 }
 
 h1 {
@@ -123,6 +125,15 @@ p {
 
 /* CSS Box Model */
 
+.circle{
+  margin: 3rem auto;
+  width: 200px;
+  height: 200px;
+  border: 10px solid #302344;
+  border-radius: 100px;
+  outline: 5px solid rgb(103, 104, 114);
+  text-decoration: none;
+}
 
 /*---------------------------------*/
 
