@@ -28,9 +28,9 @@ body {
   margin: 2cm;
   /* margin-left: 2cm;
   margin-right: 2cm; */
-  padding: 20px;
-  outline: 25px solid rgb(67, 77, 112);
-  outline-offset: 22px;
+  padding: 1%;
+  outline: 5px solid rgb(67, 77, 112);
+  outline-offset: 32px;
 }
 
 h1 {
@@ -137,6 +137,15 @@ p {
 
 /*---------------------------------*/
 
+/*---------------------------------*/
+
+/* CSS Typography */
+
+/*Typography is the way that text os arranged and presented*/
+
+
+/*---------------------------------*/
+
 
 .threed {
   font-size: 3em;
@@ -152,3 +161,4 @@ p {
   padding: 10px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a subtle text shadow for depth */
 }
+
