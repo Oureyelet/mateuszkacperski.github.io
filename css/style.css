@@ -1,5 +1,12 @@
+* {
+  line-height: 2em;
+  text-decoration-thickness: 0.1px;
+  text-underline-offset: 10px;
+}
+
 .top-body {
   text-align: center;
+  font-family: 'Bungee Spice', sans-serif;
 }
 
 .font-control {
@@ -19,6 +26,8 @@
 
 html {
   font-size: 22px;
+  font-family: 'Young Serif', serif;
+  letter-spacing: 0.1em;
 }
 
 body {
