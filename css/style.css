@@ -74,6 +74,10 @@ a {
     color: whitesmoke;
   }
 
+  a:hover, a:focus {
+    color: chartreuse;
+  }
+
 /*Horizontally center text*/
 .centered-text {
   text-align: center;
