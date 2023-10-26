@@ -76,6 +76,7 @@ a {
 
   a:hover, a:focus {
     color: chartreuse;
+    background-color: rgb(50, 45, 37);
   }
 
 /*Horizontally center text*/
@@ -150,7 +151,6 @@ p {
 }
 
 /*---------------------------------*/
-
 /*---------------------------------*/
 
 /* CSS Typography */
@@ -159,10 +159,31 @@ p {
 
 
 /*---------------------------------*/
-
 /*---------------------------------*/
 
 /* Styling Links */
+
+
+
+/*---------------------------------*/
+/*---------------------------------*/
+
+/* List Styles */
+
+ol {
+  list-style-type: none; /* Remove the default list numbering */
+}
+
+ol li::before {
+  content: ""; /* Add an empty content before each list item */
+  background-image: url('../img/check-mark-logo'); /* Replace 'check-mark-logo.png' with your actual image file */
+  background-size: 20px; /* Adjust the size as needed */
+  background-repeat: no-repeat; /* Prevent repeating the image */
+  display: inline-block; /* Display the image inline with the list item text */
+  width: 20px; /* Set the width to match the background size */
+  height: 20px; /* Set the height to match the background size */
+  margin-right: 5px; /* Add some spacing between the checkmark and text */
+}
 
 
 
