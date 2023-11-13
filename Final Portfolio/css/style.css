@@ -23,8 +23,35 @@
 }
 
 @media (max-width: 480px) {
-    .large-element {
-        display: none; /* Hide the element on screens with a width of 480px or less */
+    /* Adjust styles for screens with a width of 480px or less */
+    header {
+        padding: 10px;
+        height: auto;
+    }
+
+    .nav_links {
+        display: block;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .img_logo {
+        margin: 10px; /* Adjust the margin as needed */
+    }
+
+    .img_face img {
+        width: 100%; /* Make the face image fill the width of its container */
+    }
+
+    .colour-block,
+    .white-block {
+        width: 100%; /* Make the color blocks fill the width of the screen */
+        padding: 7% 5% 10% 5%; /* Adjust padding as needed */
+    }
+
+    .skew-cc,
+    .skew-c {
+        height: 50px; /* Adjust the height of skew elements for better spacing */
     }
 }
 
