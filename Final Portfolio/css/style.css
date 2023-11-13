@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Montserrat&family=Young+Serif&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+@media (max-width: 768px) {
+    /* Adjust styles for tablets and smaller screens here */
+}
+
+@media (max-width: 480px) {
+    /* Adjust styles for phones and smaller screens here */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin:0px;
+}
+
+header {
+    box-sizing: border-box;
+    margin: 0px;
+    background-color: rgb(70, 70, 90);
+}
+
+li, a {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: azure;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+li, a:hover {
+    color: rgb(98, 100, 100);
+    
+}
+
+header {
+    display: flex;
+    height: 77px;
+    justify-content:space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+.img_logo {
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.img_face {
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+}
+
+.img_logo:hover {
+    color: rgb(100, 152, 44);
+    transform: scale(1.05); /* Increase the size by 10% on hover (you can adjust this as needed) */
+    opacity: 1;
+}
+
+.social-icon {
+    margin-right: 0px; 
+    margin-left: 0px;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.social-icon:hover {
+    transform: scale(1.1); /* Increase the size by 10% on hover (you can adjust this as needed) */
+    opacity: 1;
+}
+
+.nav_links li {
+    list-style: none;
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.separator {
+    border: none;
+    height: 2px; /* Adjust the thickness of the line as needed */
+    background-color: #ccc; /* Line color */
+    margin: 20px 0; /* Adjust the margin as needed to control the spacing */
+}
+
+.colour-block {
+    background:#3D474D;
+    width:60%;
+    padding:7% 20% 10% 20%;
+    color:#fff;
+}
+
+.white-block {
+    background:#fff;
+    width:60%;
+    padding:7% 20% 10% 20%;
+    color:#3D474D;
+}
+  
+  /*------------------*/
+  /*  SKEW CLOCKWISE  */
+  /*------------------*/
+.skew-cc{
+    width:100%;
+    height:100px;
+    position:absolute;
+    left:0px;
+    background: linear-gradient(to right bottom, #3D474D 49%, #fff 50%),    linear-gradient(-50deg, #ffffff 16px, #000 0);
+}
+  
+  /*-------------------------*/
+  /* SKEW COUNTER CLOCKWISE  */
+  /*-------------------------*/
+.skew-c{
+    width:100%;
+    height:100px;
+    position:absolute;
+    left:0px;
+    background: linear-gradient(to left bottom, #fff 49%, #3D474D 50%);
+}
