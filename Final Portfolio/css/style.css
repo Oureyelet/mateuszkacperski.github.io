@@ -3,11 +3,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 
 @media (max-width: 768px) {
-    /* Adjust styles for tablets and smaller screens here */
+    /* Zastosuj style dla ekranów o szerokości do 768px */
+    header {
+        padding: 10px; /* Przykładowa zmiana marginesu dla nagłówka */
+        height: auto; /* Dostosuj wysokość nagłówka dla małych ekranów */
+    }
+
+    .nav_links {
+        display: block; /* Ustaw linki w pionie na małych ekranach */
+        text-align: center; /* Wyśrodkuj linki na małych ekranach */
+        margin-bottom: 10px; /* Dodaj odstęp między linkami */
+    }
+
+    .img_logo {
+        margin-right: 0; /* Przykładowa zmiana marginesu dla logo na małych ekranach */
+    }
+
+    /* Dodaj dodatkowe dostosowania stylów w zależności od potrzeb */
 }
 
 @media (max-width: 480px) {
-    /* Adjust styles for phones and smaller screens here */
+    .large-element {
+        display: none; /* Hide the element on screens with a width of 480px or less */
+    }
 }
 
 * {
