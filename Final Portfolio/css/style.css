@@ -34,9 +34,12 @@ li, a {
     list-style-type: none;
 }
 
+li {
+    margin-right: 5rem;
+}
+
 li, a:hover {
     color: rgb(98, 100, 100);
-    
 }
 
 header {
@@ -44,12 +47,15 @@ header {
     height: 77px;
     justify-content:space-between;
     align-items: center;
+    justify-content: center;
     padding: 30px;
 }
 
 .img_logo {
     border-radius: 50%;
     cursor: pointer;
+    margin: 10rem;
+    margin-left: 2rem;
 }
 
 .img_face {
@@ -79,7 +85,8 @@ header {
 .nav_links li {
     list-style: none;
     display: inline-block;
-    padding: 0px 20px;
+    padding: 0px;
+    margin-left: 0px;
 }
 
 .separator {
