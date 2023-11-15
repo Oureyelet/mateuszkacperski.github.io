@@ -8,9 +8,11 @@
     <meta name="author" content="Mateusz Kacperski">
     <meta name="description" content="This page is the final result from HTML5, CSS and JS training I had in 2023">
 
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
     <title>Mateusz Kacperski's Portfolio</title>
     <link rel="icon" href="img/head_icon.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/Final_Portfolio/css/style.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
@@ -27,7 +29,11 @@
     <header>
         <img class="img_logo" src="img/main_logo.png" alt="logo" width="59" height="59" >
 
-        <nav>   
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check"></label>
+            <i class="fas fa-bars" id="btn"></i>
+            <i class="fas fa-times" id="cancel"></i>
             <ul class="nav_links">
                 <li><a href="#about">about</a></li>
                 <li><a href="#portfolio">portfolio</a></li>
@@ -45,7 +51,7 @@
                 <i class="fa-brands fa-github fa-2xl social-icon" style="color: #edeff2;"></i>
             </a>
         </div>
-        
+
     </header>
 
     <div class="img_face">
