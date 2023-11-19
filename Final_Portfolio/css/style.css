@@ -95,23 +95,6 @@ li, a:hover {
     color: rgb(98, 100, 100);
 }
 
-
-
-.btn, 
-.cancel {
-    color:rgb(255, 255, 255) ;
-    font-size: 30px ;
-    float: right;
-    line-height: 80px ;
-    margin-right: 40px ;
-    cursor: pointer;
-    display: none;
-}
-
-#check {
-    color: black;
-}
-
 .img_logo {
     border-radius: 50%;
     cursor: pointer;
