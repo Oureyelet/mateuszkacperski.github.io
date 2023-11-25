@@ -58,27 +58,27 @@ h1 {
 
 /* Change color for unvisited (hyperlinks) links */
 a {
-    color: whitesmoke; /* Change to the desired color */
-  }
+  color: whitesmoke; /* Change to the desired color */
+}
 
-  /* Change color for visited links */
-  a:visited {
-    color: whitesmoke; /* Change to the desired color */
-  }
+/* Change color for visited links */
+a:visited {
+  color: whitesmoke; /* Change to the desired color */
+}
 
-  /*Aligning text content to the right within an element*/
-  .right-aligned-text {
-    text-align: right;
-  }
+/*Aligning text content to the right within an element*/
+.right-aligned-text {
+  text-align: right;
+}
 
-  a:active {
-    color: whitesmoke;
-  }
+a:active {
+  color: whitesmoke;
+}
 
-  a:hover, a:focus {
-    color: chartreuse;
-    background-color: rgb(50, 45, 37);
-  }
+a:hover, a:focus {
+  color: chartreuse;
+  background-color: rgb(50, 45, 37);
+}
 
 /*Horizontally center text*/
 .centered-text {
