@@ -162,7 +162,15 @@ label #cancel {
         line-height: 150px;
         size: 7rem;
         cursor: pointer;
-    } 
+    }
+
+    .funcy_social_icons_1 {
+        
+    }
+    
+    .funcy_social_icons_2 {
+        
+    }
 
     .for_social_icons:hover {
         transform: scale(1.05); /* Increase the size by 10% on hover (you can adjust this as needed) */
