@@ -1,177 +1,126 @@
-@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Montserrat&family=Young+Serif&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 
-@media (max-width: 768px) {
-    /* Zastosuj style dla ekranów o szerokości do 768px */
-    header {
-        padding: 10px; /* Przykładowa zmiana marginesu dla nagłówka */
-        height: auto; /* Dostosuj wysokość nagłówka dla małych ekranów */
-    }
-
-    .nav_links {
-        display: block; /* Ustaw linki w pionie na małych ekranach */
-        text-align: center; /* Wyśrodkuj linki na małych ekranach */
-        margin-bottom: 10px; /* Dodaj odstęp między linkami */
-    }
-
-    .img_logo {
-        margin-right: 0; /* Przykładowa zmiana marginesu dla logo na małych ekranach */
-    }
-
-    /* Dodaj dodatkowe dostosowania stylów w zależności od potrzeb */
-}
-
-@media (max-width: 480px) {
-    header {
-        padding: 10px;
-        height: auto;
-    }
-
-    .nav_links {
-        display: block;
-        text-align: center;
-        margin-bottom: 10px;
-    }
-
-    .img_logo {
-        margin: 10px; /* Adjust the margin as needed */
-    }
-
-    .img_face img {
-        width: 100%; /* Make the face image fill the width of its container */
-    }
-
-    .colour-block,
-    .white-block {
-        width: 100%; /* Make the color blocks fill the width of the screen */
-        padding: 5% 5%; /* Adjust padding as needed */
-    }
-
-    .skew-cc,
-    .skew-c {
-        height: 100px; /* Adjust the height of skew elements for better spacing */
-    }
-
-    h1 {
-        font-size: 20px; /* Adjust the font size for better visibility on small screens */
-    }
+body {
+    font-family: 'Montserrat', sans-serif;
 }
 
 * {
     margin: 0;
     padding: 0;
-}
-
-body {
-    margin:0px;
-}
-
-header {
-    display: flex;
-    box-sizing: border-box;
-    margin: 0px;
-    background-color: #3D474D;
-    height: 77px;
-    justify-content:center;
-    align-items: center;
-    padding: 30px;
-}
-
-li, a {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    color: azure;
-    text-decoration: none;
-    list-style-type: none;
-}
-
-li {
-    margin-right: 5rem;
-}
-
-li, a:hover {
-    color: rgb(98, 100, 100);
-}
-
-.img_logo {
-    border-radius: 50%;
-    cursor: pointer;
-    margin: 10rem;
-    margin-left: 2rem;
-}
-
-.img_face {
-    display: flex;
-    justify-content: center; /* Horizontally center */
-    align-items: center; /* Vertically center */
-}
-
-.img_logo:hover {
-    color: rgb(100, 152, 44);
-    transform: scale(1.05); /* Increase the size by 10% on hover (you can adjust this as needed) */
-    opacity: 1;
-}
-
-.social-icon {
-    margin-right: 0px; 
-    margin-left: 0px;
-    padding: 0.5rem;
-    cursor: pointer;
-}
-
-.social-icon:hover {
-    transform: scale(1.1); /* Increase the size by 10% on hover (you can adjust this as needed) */
-    opacity: 1;
-}
-
-.nav_links li {
     list-style: none;
+    text-decoration: none;
+}
+
+nav {
+    height: 95px;
+    background: #2c3e50;
+}
+
+nav img {
+    width: 70px;
+    position: absolute;
+    top: 13px;
+    left: 12%;
+    border-radius: 50%;
+}
+
+nav ul {
+    float: right;
+    margin-right: 25px;
+}
+
+nav ul li {
     display: inline-block;
-    padding: 0px;
-    margin-left: 0px;
+    line-height: 91px;
+    margin: 0 15px;
 }
 
-.separator {
-    border: none;
-    height: 2px; /* Adjust the thickness of the line as needed */
-    background-color: #ccc; /* Line color */
-    margin: 20px 0; /* Adjust the margin as needed to control the spacing */
+nav ul li a {
+    position: relative;
+    color: white;
+    font-size: 18px;
+    transition: 4s;
+    text-decoration: none;
 }
 
-.colour-block {
-    background:#3D474D;
-    width:60%;
-    padding:7% 20% 10% 20%;
-    color:#fff;
+nav ul li a::before {
+    content: ' ';
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background: white;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 4s linear;
 }
 
-.white-block {
-    background:#fff;
-    width:60%;
-    padding:7% 20% 10% 20%;
-    color:#3D474D;
+nav ul li a:hover {
+    transform: scaleX(1);
+    transform-origin: left;
 }
+
+label #btn,
+label #cancel {
+    color: white;
+    font-size: 30px;
+    float: right;
+    line-height: 91px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media only screen and  (max-width: 1118px) {
+    nav img {
+      left: 8%;
+    }
+}
+
+@media only screen and  (max-width: 944px) {
+    nav img {
+        left: 6%;
+        top: 13px;
+        width: 70px;
+    }
   
-  /*------------------*/
-  /*  SKEW CLOCKWISE  */
-  /*------------------*/
-.skew-cc{
-    width:100%;
-    height:100px;
-    position:relative;
-    left:0px;
-    background: linear-gradient(to right bottom, #3D474D 49%, #fff 50%),    linear-gradient(-50deg, #ffffff 16px, #000 0);
+    nav ul li a {
+        font-size: 17px;
+    }
 }
+
+@media only screen and  (max-width: 860px) {
+   label #btn{
+        display: block;
+   }
+
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #485a6c;
+        top: 97px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }   
   
-  /*-------------------------*/
-  /* SKEW COUNTER CLOCKWISE  */
-  /*-------------------------*/
-.skew-c{
-    width:100%;
-    height:100px;
-    position:relative;
-    left:0px;
-    background: linear-gradient(to left bottom, #fff 49%, #3D474D 50%);
+    nav ul li a {
+        font-size: 20px;
+        /* margin: -7px; */
+    }
+
+    #check:checked ~ ul{
+        left: 0;
+    }
 }
