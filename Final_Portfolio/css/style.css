@@ -188,6 +188,10 @@ label #cancel {
 
 @media only screen and  (max-width: 860px) {
 
+    .img_face {
+        height: 390px;
+    }
+
     div {
         display: none;
     }
