@@ -159,17 +159,9 @@ label #cancel {
     
     .for_social_icons {
         display: inline;
-        line-height: 150px;
+        line-height: 10px;
         size: 7rem;
         cursor: pointer;
-    }
-
-    .funcy_social_icons_1 {
-        
-    }
-    
-    .funcy_social_icons_2 {
-        
     }
 
     .for_social_icons:hover {
