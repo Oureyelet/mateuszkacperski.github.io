@@ -96,6 +96,63 @@ label #cancel {
     display: none;
 }
 
+.img_face {
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+    margin-top: 7px;
+}
+
+/* Main page separator see code below */
+
+.separator {
+    border: none;
+    height: 2px; /* Adjust the thickness of the line as needed */
+    background-color: #ccc; /* Line color */
+    margin: 20px 0; /* Adjust the margin as needed to control the spacing */
+}
+
+.colour-block {
+    background:#3D474D;
+    width:60%;
+    padding:7% 20% 10% 20%;
+    color:#fff;
+}
+
+.white-block {
+    background:#fff;
+    width:60%;
+    padding:7% 20% 10% 20%;
+    color:#3D474D;
+}
+  
+  /*------------------*/
+  /*  SKEW CLOCKWISE  */
+  /*------------------*/
+.skew-cc{
+    width:100%;
+    height:100px;
+    position:relative;
+    left:0px;
+    background: linear-gradient(to right bottom, #3D474D 49%, #fff 50%),    linear-gradient(-50deg, #ffffff 16px, #000 0);
+}
+  
+  /*-------------------------*/
+  /* SKEW COUNTER CLOCKWISE  */
+  /*-------------------------*/
+.skew-c{
+    width:100%;
+    height:100px;
+    position:relative;
+    left:0px;
+    background: linear-gradient(to left bottom, #fff 49%, #3D474D 50%);
+}
+
+/* ------- Main page separator see code above------------ */
+
+
+/*-------------------- @MEDIA below ---------------------*/
+
 @media only screen and  (max-width: 1118px) {
     nav img {
       left: 8%;
@@ -130,6 +187,14 @@ label #cancel {
 }
 
 @media only screen and  (max-width: 860px) {
+
+    .img_face img {
+        display: none;
+    }
+
+    section {
+        display: none;
+    }
    
     label #btn {
         display: block;
