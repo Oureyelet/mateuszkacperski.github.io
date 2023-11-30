@@ -351,6 +351,10 @@ label #cancel {
 
 @media only screen and  (max-width: 860px) {
 
+    footer {
+        display: none;
+    }
+
     .img_face {
         height: 350px;
     }
