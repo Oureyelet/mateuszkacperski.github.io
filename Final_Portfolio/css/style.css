@@ -190,7 +190,7 @@ label #cancel {
 /* Footer links */
 
 .footer-distributed .footer-links{
-	color:  #3D474D);
+	color:  #3D474D;
 	margin: 20px 0 12px;
 	padding: 0;
 }
@@ -217,7 +217,7 @@ label #cancel {
 }
 
 .footer-distributed .footer-center i{
-	background-color: #3D474D;
+	background-color: #0272b8c1;
 	color: #3D474D;
 	font-size: 25px;
 	width: 38px;
@@ -284,7 +284,7 @@ label #cancel {
 
 .footer-distributed .footer-company-about span{
 	display: block;
-	color: #3D474D);
+	color: #3D474D;
 	font-size: 14px;
 	font-weight: bold;
 	margin-bottom: 20px;
@@ -299,11 +299,11 @@ label #cancel {
 	width: 35px;
 	height: 35px;
 	cursor: pointer;
-	background-color:  #33383b;
+	background-color:  #ffffff;
 	border-radius: 2px;
 
-	font-size: 20px;
-	color: #3D474D;
+	font-size: 22px;
+	color: #000000;
 	text-align: center;
 	line-height: 35px;
 
