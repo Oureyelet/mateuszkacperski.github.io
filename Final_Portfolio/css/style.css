@@ -91,11 +91,7 @@ label #cancel {
     cursor: pointer;
     display: none;
 
-    footer {
-        display: none;
-    }
-
-    .img_face {
+    body {
         display: none;
     }
 }
