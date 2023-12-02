@@ -90,10 +90,6 @@ label #cancel {
     margin-right: 40px;
     cursor: pointer;
     display: none;
-
-    body {
-        display: none;
-    }
 }
 
 #check {
@@ -433,4 +429,9 @@ label #cancel {
 	.footer-distributed .footer-center i{
 		margin-left: 0;
 	}
+}
+
+/* Apply styles to hide content when the menu is open */
+body.menu-open {
+    overflow: hidden; /* Disable scrolling */
 }
