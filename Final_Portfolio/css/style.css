@@ -103,6 +103,18 @@ label #cancel {
     margin-top: 7px;
 }
 
+.links {
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.links:hover {
+    color: #cce3ed;
+    font-size: large;
+    
+}
+
 /* Main page separator see code below */
 
 .separator {
