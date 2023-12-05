@@ -354,10 +354,6 @@ label #cancel {
     .img_face {
         height: 310px;
     }
-
-    article {
-        display: none;
-    }
    
     label #btn {
         display: block;
@@ -434,4 +430,12 @@ label #cancel {
 /* Apply styles to hide content when the menu is open */
 body.menu-open {
     overflow: hidden; /* Disable scrolling */
+    
+    .skew-cc{
+        display: none;
+    }
+      
+    .skew-c{
+        display: none;
+    }
 }
