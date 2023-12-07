@@ -104,7 +104,7 @@ label #cancel {
 }
 
 .links {
-    color: #fff;
+    color: #564eab;
     font-weight: 700;
     cursor: pointer;
 }
@@ -113,6 +113,17 @@ label #cancel {
     color: #cce3ed;
     font-size: large;
     
+}
+
+article {
+    line-height: 2.5rem;
+    font-size: 1.1rem;
+}
+
+.exp_settings {
+    font-family: fantasy;
+    letter-spacing: 1.5rem;
+    font-size: 4rem;
 }
 
 /* Main page separator see code below */
