@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 
 body {
     font-family: 'Montserrat', sans-serif;
@@ -106,6 +107,56 @@ label #cancel {
     align-items: center; /* Vertically center */
     margin-top: 7px;
 }
+
+/* Constac form code below */
+
+form { max-width:420px; margin:50px auto; }
+
+.feedback-input {
+  color:rgb(0, 0, 0);
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border:2px solid #0272b8c1;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+  margin-left: -150px;
+}
+
+.feedback-input:focus { border:2px solid #0272b8c1; }
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+[type="submit"] {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  width: 100%;
+  background:#0272b8c1;
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:rgb(0, 0, 0);
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+  margin-left: -150px;
+}
+[type="submit"]:hover { background:#0272b8c1; }
+
+/* Constac form code above */
 
 /* ------- Footer css code css below------------ */
 
@@ -299,11 +350,11 @@ label #cancel {
     justify-content: space-around;
     align-items: center;
     color: #000000;
-    animation: expand .8s ease forwards;
+    animation: expand 1.8s ease forwards;
     background-color: var(--secondary-color);
     position: relative;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    transition: all .8s ease;
+    transition: all 1.8s ease;
   }
   
   .container_content {
@@ -322,7 +373,7 @@ label #cancel {
   }   
       
   .container_img {
-    width: 50%;
+    width: 35%;
     animation: slideIn 1.5s ease-in-out forwards;
     
   }
@@ -372,6 +423,32 @@ label #cancel {
       transform: translateY(100px);
       animation: slideUp .8s ease forwards .5s;
   }
+
+  /* Divider code below */
+
+  .h-divider {
+    margin: auto;
+    margin-top: 80px;
+    width: 80%;
+    position: relative;
+  }
+  
+  .h-divider .shadow {
+    overflow: hidden;
+    height: 20px;
+  }
+  
+  .h-divider .shadow:after {
+    content: '';
+    display: block;
+    margin: -25px auto 0;
+    width: 100%;
+    height: 25px;
+    border-radius: 125px/12px;
+    box-shadow: 0 0 8px black;
+  }
+  
+  /* Divider code above */
   
   @keyframes slideIn {
     0% {
