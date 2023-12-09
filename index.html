@@ -1,188 +1,169 @@
-<!DOCTYPE html> <!-- 14:58 -->
+<!DOCTYPE html>
 
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Mateusz Kacperski">
-    <meta name="description"
-        content="This page contains all the things I am learining how to create as I learn HTML, CSS ans JS.">
+    <meta name="description" content="This page is the final result from HTML5, CSS and JS training I had in 2023">
     <title>Mateusz Kacperski's Portfolio</title>
-    <!-- Head icon: -->
-    <link rel="icon" href="img/head_icon.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Young+Serif&display=swap" rel="stylesheet">
+    <!-- Head icon: -->
+    <link rel="icon" href="/img/head_icon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+
+    <!-- Link for focial icons: -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+    <!-- ... (your existing scripts) ... -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var checkbox = document.getElementById("check");
+            var body = document.body;
+
+            checkbox.addEventListener("change", function() {
+                if (checkbox.checked) {
+                    body.classList.add("menu-open");
+                } else {
+                    body.classList.remove("menu-open");
+                }
+            });
+        });
+    </script>
 
 </head>
 
 <body>
-    <header class="top-body">
-        <h1>Hello World, Mateusz Kacperski here !</h1>
 
-        <div class="font-control">
-            <label for="font-size-range">Font Size:</label>
-            <input type="range" id="font-size-range" min="10" max="80" step="1" value="16">
-            <span id="font-size-value">16px</span>
-        </div>
-        <p id="text-to-change">I'm self taught full stack developer</p>
-        <script src="script.js"></script>
+    <header>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check">
+                <i class="fas fa-bars" id="btn"></i>
+                <i class="fas fa-times" id="cancel"></i>
+            </label>
 
-        <div class="centered-image">
-            <img src="img/tree-8175062_1920.jpg" alt="Genesis 2:9 'In the middle of the garden were the tree of life'"
-                title="Tree of life" width="600" loading="lazy">
-        </div>
+            <img src="/img/main_logo.png" alt="logo">
+            <ul>
+                <li><a href="/index.html">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="https://onedrive.live.com/embed?resid=C8740B0F66342B27%212310&amp;authkey=!AMg0upVJI_2Lz2c&amp;em=2" target="_blank">resume</a></li>
+                <li><a href="/contact.html">contact</a></li>
+                <li class="for_social_icons">
+                    <a href="https://www.linkedin.com/in/kacpe/" target="_blank">
+                    <i class="fab fa-linkedin-in for_social_icons">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</i></a>
+                
+                    <a href="https://github.com/Oureyelet" target="_blank">
+                    <i class="fa-brands fa-github fa-2xl for_social_icons"></i></a>
+                </li>
+            </ul>
+        </nav>
     </header>
 
-    <main>
+    <section class="img_face">
+        <h2>&nbsp;</h2>
+        <img class="img_face" src="/img/m.png" alt="face image">
+        <h2>&nbsp;</h2>
+    </section>
 
-        <nav aria-label="primary-navigation"><!--Navigation links-->
+    <article>
 
-            <!--A horizontal rule-->
-            <hr>
-
-            <h4 id="primary-navigation">Navigation links:</h4>
-            <nav>
-                <ul>
-                    <li><a href="my_storie.html">My journey to becoming a full stack developer</a></li>
-                    <li><a href="/Final_Portfolio/index.html">Next level - Portfolio project</a></li>
-                    <li><a href="https://onedrive.live.com/embed?resid=C8740B0F66342B27%212310&amp;authkey=!AMg0upVJI_2Lz2c&amp;em=2" width="476px" height="288px" frameborder="0" target="_blank">My resume</a></li>
-                    <li><a href="#exp">My non-commercial experiences</a></li>
-                    <li><a href="power_of_html.html">HTML's abilities I have learned</a></li>
-                    <li><a href="sql.html">Power of SQL</a></li>
-                    <li><a href="#contact">Contact me</a></li>
-                    <li><a href="#footer">Footer</a></li>
-                </ul>
-            </nav>
-        </nav>
-
-        <aside><!--Aside place for small info aabout me-->
-
-            <!--A horizontal rule-->
-            <hr>
-
-            <details>
-
-                <summary>Guess the number of hours I code per day</summary>
-
-                <p>I start at <time datetime="04:00">4:40 am</time> and I write code for <time datetime="PT1H">1
-                        hour</time> every morning.</p>
-
-            </details>
-        </aside>
-
-        <article id="exp"><!--Article about my experiences-->
-
-            <!--A horizontal rule-->
-            <hr>
-            <h2 class="h2-color">My Non-Commercial Experiences</h2>
-
-            <h3>Year 0 - 2</h3>
-
-            <!-- '<abbr title=""' is a Tool tip-->
-            <p><abbr title="I learn C++ from www.learncpp.com and Stephen Prata C++ Primer Plus 6th Edition 2011">Learn
-                    how to code in C++ </abbr>
-                <!--'&nbsp' is like pace/tab -->
-                &nbsp;<a
-                    href="https://github.com/Oureyelet/Xcode-C-Plus-Plus-Primer-Plus-Sixth-Sdition-Developers-Library-S-Prata-"
-                    target="_blank"><i><u>GitHub repo with my C++ code</u></i></a>
-            </p>
-
-            <p>Resources I've used to learn C++:</p>
-            <ol > <!--Use <ul> to unorderd bullet point list-->
-                <li><a href="www.learncpp.com" target="_blank">www.learncpp.com</a></li>
-                <li><a href="https://zhjwpku.com/assets/pdf/books/C++.Primer.Plus.6th.Edition.Oct.2011.pdf" target="_blank">C++ Primer Plus 6th Edition 2011 Stephen Prata</a></li>
-                <li>Youtube tutorials</li>
-                <li><a href="https://en.cppreference.com/w/" target="_blank">www.cppreference.com</a></li>
-                <li>GitHub repositories</li>
-            </ol>
-
-            <h3>Year 2 - present</h3>
-            <p>Learn how to code in HTML, CSS and JS and create my first static website - Portfolio </p>
-            <p>Begin studying Database: SQL Server Management Studio & SQL</p>
-
-        </article>
-
-        <article id="contact"><!--Acticule about "Contact me"-->
-
-            <!--A horizontal rule-->
-            <hr>
-
-            <h2 class="h2-color">Contact Me</h2>
-
-            <form action="https://formsubmit.co/oureyelet@gmail.com" method="POST">
-
-                <fieldset>
-
-                    <p>I'd really like to hear from you!</p>
-
-                    <p>
-                        <label for="name">Your name:</label>
-                        <input type="text" name="firstname" id="name" placeholder="Your name" autocomplete="off" required>
-                    </p>
-
-                    <p>
-                        <label for="email">Your email:</label>
-                        <input type="email" name="email" id="email" placeholder="Your email" required>
-                    </p>
-
-                    <p>
-                        <label for="messageB">Your Message:</label>
-                        <textarea name="message" id="messageB" placeholder="Your message" cols="30" rows="10" required></textarea>
-                    </p>
-
-                    <p>
-                        <input type="hidden" name="_next" value="thankyou.html">
-                        <input type="hidden" name="_subject" value="New email fom portfolio woooow!">
-                        <input type="hidden" name="_next" value="https://oureyelet.github.io/mateuszkacperski.github.io/thankyou.html">
-                    </p>
-
-                    <button type="submit">Sent</button>
-
-                </fieldset>
-
-            </form>
-
-        </article>
-
-        <section><!--Section about "Back to TOP" also see CSS with: "Aligning text content to the right within an element"-->
-            
-            
-            
-            <div class="right-aligned-text">
-                <h5>
-                    <br>
-                    <br>
-                    <br>
-                    <a class="circle" href="#">Back To Top</a>
-                </h5>
-            </div>
-
-        </section>
-
-    </main>
-
-    <footer id="footer"><!--Section about footer-->
-
-        <h2>&nbsp;</h2> <!--This is for fix semantic error i had-->
-
-        <!--A horizontal rule-->
-        <hr>
-
-        <div class="centered-text small-text">
-            <a href="mailto:oureyelet@gmail.com">mkacprski.net@gmail.com</a>
-            <a href="tel:+447842670579">+447842670579</a>
+        <div class="skew-c"></div>
+        <div class="colour-block">
+        <h1 class="exp_settings">Experience</h1>
+        <br>
+        <h2>My Coding Journey: From C++ Enthusiast to Full Stack Developer</h2>
+        <a class="links" href="https://github.com/Oureyelet?tab=repositories" target="_blank"><i>GitHub repo with my C++ code</i></a>
+        <p>In the ever-evolving realm of programming, my journey began on February 23, 2021, when I took my first steps into the world of C++. Armed with  curiosity and determination, I embarked on a self-taught adventure that has shaped my trajectory as a coder.
+        Year 0 - 2: Mastering the Fundamentals in C++
+        During the initial phase of my coding odyssey, I delved deep into the intricacies of C++. I established my coding foundation through various resources, including the comprehensive lessons from www.learncpp.com, the insightful guidance of "C++ Primer Plus 6th Edition" by Stephen Prata (2011), and the wealth of knowledge provided by YouTube tutorials. In addition, I explored cppreference.com and actively engaged with GitHub repositories</p>
+        <p>To demonstrate my progress and share my code snippets, I proudly created my first GitHub repository dedicated to my C++ projects. This repository stands not only as a testament to my learning journey but also as a contribution to the collective knowledge of my future coding reference.</p>
+        <p>Eager to broaden my skill set, I expanded my coding repertoire to include HTML, CSS, and JavaScript. With newfound proficiency, I crafted my inaugural static website—a personal portfolio showcasing my evolving skills and projects. This marked a pivotal moment as I transitioned from a C++ enthusiast to a budding Full Stack Developer. Simultaneously, I immersed myself in the world of databases, SQL Server Management Studio and SQL.</p>
+        <p>Present Role: Section Manager with IT Project Focus</p>
+        <p>In my current capacity as a Section Manager, I lead with a unique blend of managerial acumen and technical expertise. This role not only sharpens my organizational skills but also allows me to apply my IT prowess to real-world challenges. My journey from C++ initiation to Full Stack Developer reflects not only my technical growth but also my commitment to embracing new challenges and opportunities in the ever-expanding world of programming.</p>
         </div>
 
-        <div class="centered-text small-text">Copyright &copy; 2023 Mateusz Kacperski | All Rights Reserved</div>
+        <div class="skew-cc"></div>
+        <div class="white-block">
+        <h1>Skills</h1>
+        <p>Jeremiah 29:11 - For I know the plans I have for you,” declares the LORD, “plans to prosper you and not to harm you, plans to give you hope and a future.</p>
+        </div>
 
-        <!--A horizontal rule-->
-        <hr>
+        <div class="skew-c"></div>
+        <div class="colour-block">
+        <h1>Here is H1 Tag can be title of bottom part</h1>
+        <p>Romans 8:28 - And we know that in all things God works for the good of those who love him, who have been called according to his purpose.</p>
+        </div>
 
-    </footer>
+    </article>
+
+    <footer class="footer-distributed">
+
+        <div class="footer-left">
+
+            <h3><img src="/img/4.png" alt="logo"></h3>
+
+            <p class="footer-links">
+                <a href="#" class="link-1">Home</a>
+            
+                <a href="#">About</a>
+
+                <a href="https://onedrive.live.com/embed?resid=C8740B0F66342B27%212310&amp;authkey=!AMg0upVJI_2Lz2c&amp;em=2" target="_blank">Résumé</a>
+                
+                <a href="/contact.html">Contact</a>
+            </p>
+
+            <p class="footer-company-name">www.kacperski.net © 2023</p>
+        </div>
+
+        <div class="footer-center">
+
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p>Sheffield, UK</p>
+            </div>
+
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>(+44)7842670579</p>
+            </div>
+
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:support@company.com">mkacperski.net@gmail.com</a></p>
+            </div>
+
+        </div>
+
+        <div class="footer-right">
+
+            <p class="footer-company-about">
+                <span>Static Website Portfolio</span>
+                Keep me from lying to myself; give me the privilege of knowing your instructions. - Psalm 119:29
+            </p>
+
+            <ul class="footer-icons">
+
+                <li class="for_social_icons">
+                    <a href="https://www.linkedin.com/in/kacpe/" target="_blank">
+                    <i class="fab fa-linkedin-in for_social_icons">&nbsp;&nbsp;&nbsp;</i></a>
+                
+                    <a href="https://github.com/Oureyelet" target="_blank">
+                    <i class="fa-brands fa-github fa-2xl for_social_icons"></i></a>
+                </li>
+
+            </ul>
+
+        </div>
+
+	</footer>
+
+    <div class="overlay"></div>
 
 </body>
 
 </html>
+

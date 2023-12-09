@@ -1,224 +1,464 @@
-
-* {
-  line-height: 2em;
-  text-decoration-thickness: 0.1px;
-  text-underline-offset: 10px;
-}
-
-.top-body {
-  text-align: center;
-  font-family: 'Bungee Spice', sans-serif;
-}
-
-.font-control {
-  margin: 20px;
-}
-
-#font-size-range {
-  width: 200px;
-}
-
-#font-size-value {
-  display: inline-block;
-  width: 30px;
-  margin-left: 10px;
-  font-weight: bold;
-}
-
-html {
-  font-size: 22px;
-  font-family: 'Young Serif', serif;
-  letter-spacing: 0.1em;
-}
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 
 body {
-  background-color: #302344;
-  color: whitesmoke;
-  border: 14px double rgb(71, 159, 74);
-  margin: 2cm;
-  /* margin-left: 2cm;
-  margin-right: 2cm; */
-  padding: 1%;
-  outline: 5px solid rgb(67, 77, 112);
-  outline-offset: 32px;
+    font-family: 'Montserrat', sans-serif;
 }
 
-h1 {
-  font-size: 40px;
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
 }
 
-.h1_v2 {
-  font-size: 55px;
+nav {
+    height: 95px;
+    background: #3D474D;
 }
 
-/* Adjust the size as needed */
-.small-text {
-  font-size: 17px; 
+nav img {
+    width: 70px;
+    position: absolute;
+    top: 13px;
+    left: 12%;
+    border-radius: 50%;
+    cursor: pointer;
 }
 
-/* Change color for unvisited (hyperlinks) links */
-a {
-  color: whitesmoke; /* Change to the desired color */
+nav img:hover {
+    transform: scale(1.05); /* Increase the size by 10% on hover (you can adjust this as needed) */
+    opacity: 1;
 }
 
-/* Change color for visited links */
-a:visited {
-  color: whitesmoke; /* Change to the desired color */
+nav ul {
+    float: right;
+    margin-right: 25px;
 }
 
-/*Aligning text content to the right within an element*/
-.right-aligned-text {
-  text-align: right;
+nav ul li {
+    display: inline-block;
+    line-height: 91px;
+    margin: 0 15px;
 }
 
-a:active {
-  color: whitesmoke;
+nav ul li a {
+    position: relative;
+    color: white;
+    font-size: 18px;
+    transition: 4s;
+    text-decoration: none;
 }
 
-a:hover, a:focus {
-  color: chartreuse;
-  background-color: rgb(50, 45, 37);
+nav ul li a::before {
+    content: ' ';
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background: white;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .4s linear;
 }
 
-/*Horizontally center text*/
-.centered-text {
-  text-align: center;
+nav ul li a:hover {
+    transform: scaleX(1);
+    transform-origin: left;
 }
 
-/*To center an image*/
-.centered-image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* eight: 100vh; /* Optional: Set a specific height if needed */
+nav ul li:hover {
+    transform: scale(1.05); /* Increase the size by 10% on hover (you can adjust this as needed) */
+    opacity: 1;
 }
 
-/*Table*/
-table, tr, th, td, caption {
-  border: 1px solid #eee;
-  font-family: 'Courier New', Courier, monospace;
-  border-collapse: collapse;
-  padding: 0.5rem;
+.for_social_icons {
+    display: inline;
+    cursor: pointer;
+} 
+
+.for_social_icons:hover {
+    transform: scale(1.05); /* Increase the size by 10% on hover (you can adjust this as needed) */
+    opacity: 1;
+} 
+
+label #btn,
+label #cancel {
+    color: white;
+    font-size: 30px;
+    float: right;
+    line-height: 91px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
 }
 
-/*---------------------------------*/
-
-/* Basoc type of selectors */
-
-p {
-  color: rgb(255, 255, 255);
+#check {
+    display: none;
 }
 
-.gray {
-  color: gray;
+.img_face {
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+    margin-top: 7px;
 }
 
-.h2-color {
-  color: darkseagreen;
-  font-family: 'Bungee Spice', sans-serif;
+.links {
+    color: #564eab;
+    font-weight: 700;
+    cursor: pointer;
 }
 
-.colour-darkseagreen {
-  color: darkseagreen;
+.links:hover {
+    color: #cce3ed;
+    font-size: large;
+    
 }
 
-.hightlight {
-  text-transform: uppercase;
-  background-color: chartreuse;
+article {
+    line-height: 2.5rem;
+    font-size: 1.1rem;
 }
 
-/*---------------------------------*/
-
-/*---------------------------------*/
-
-/* CSS Units */
-
-
-/*---------------------------------*/
-
-
-/*---------------------------------*/
-
-/* CSS Box Model */
-
-.circle{
-  margin: 3rem auto;
-  width: 200px;
-  height: 200px;
-  border: 10px solid #302344;
-  border-radius: 100px;
-  outline: 5px solid rgb(103, 104, 114);
-  text-decoration: none;
+.exp_settings {
+    font-family: fantasy;
+    letter-spacing: 1.5rem;
+    font-size: 4rem;
 }
 
-/*---------------------------------*/
-/*---------------------------------*/
+/* Main page separator see code below */
 
-/* CSS Typography */
-
-/*Typography is the way that text os arranged and presented*/
-
-
-/*---------------------------------*/
-/*---------------------------------*/
-
-/* Styling Links */
-
-
-
-/*---------------------------------*/
-/*---------------------------------*/
-
-/* List Styles */
-
-ol {
-  list-style-type: none; /* Remove the default list numbering */
+.separator {
+    border: none;
+    height: 2px; /* Adjust the thickness of the line as needed */
+    background-color: #ccc; /* Line color */
+    margin: 20px 0; /* Adjust the margin as needed to control the spacing */
 }
 
-ol li::before {
-  content: ""; /* Add an empty content before each list item */
-  background-image: url('../img/check-mark-logo'); /* Replace 'check-mark-logo.png' with your actual image file */
-  background-size: 20px; /* Adjust the size as needed */
-  background-repeat: no-repeat; /* Prevent repeating the image */
-  display: inline-block; /* Display the image inline with the list item text */
-  width: 20px; /* Set the width to match the background size */
-  height: 20px; /* Set the height to match the background size */
-  margin-right: 5px; /* Add some spacing between the checkmark and text */
+.colour-block {
+    background:#3D474D;
+    width:60%;
+    padding:7% 20% 10% 20%;
+    color:#fff;
 }
 
-
-
-/*---------------------------------*/
-/*---------------------------------*/
-
-/* CSS Display Types */
-
-
-
-/*---------------------------------*/
-/*---------------------------------*/
-
-/* CSS Display Floats */
-
-/*p*5>lorem20 */
-
-
-
-/*---------------------------------*/
-
-
-.threed {
-  font-size: 3em;
-  text-align: center;
-  color: #fff;
-  text-transform: uppercase;
-  font-weight: bold;
-  position: relative;
-  background: linear-gradient(45deg, #fff, #da4949); /* Gradient background for beveled 3D effect */
-  -webkit-background-clip: text; /* Clip text to gradient background (for WebKit browsers) */
-  background-clip: text; /* Clip text to gradient background */
-  -webkit-text-fill-color: transparent; /* Hide original text color (for WebKit browsers) */
-  padding: 10px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a subtle text shadow for depth */
+.white-block {
+    background:#fff;
+    width:60%;
+    padding:7% 20% 10% 20%;
+    color:#3D474D;
+}
+  
+  /*------------------*/
+  /*  SKEW CLOCKWISE  */
+  /*------------------*/
+.skew-cc{
+    width:100%;
+    height:100px;
+    position:relative;
+    left:0px;
+    background: linear-gradient(to right bottom, #3D474D 49%, #fff 50%),    linear-gradient(-50deg, #ffffff 16px, #000 0);
+}
+  
+  /*-------------------------*/
+  /* SKEW COUNTER CLOCKWISE  */
+  /*-------------------------*/
+.skew-c{
+    width:100%;
+    height:100px;
+    position:relative;
+    left:0px;
+    background: linear-gradient(to left bottom, #fff 49%, #3D474D 50%);
 }
 
+/* ------- Main page separator see code above------------ */
+
+/* ------- Footer css code css below------------ */
+
+.footer-distributed{
+	background: #ffffff;
+	box-shadow: 0 1px 1px 0 #3D474D;
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 55px 50px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+	color:  #3D474D;
+	font: normal 36px 'Open Sans', cursive;
+	margin: 0;
+}
+
+.footer-distributed h3 span{
+	color:  lightseagreen;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #3D474D;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+  font-weight:400;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #222;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+.footer-distributed .footer-center i{
+	background-color: #0272b8c1;
+	color: #3D474D;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #3D474D;
+  font-weight:400;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  lightseagreen;
+	text-decoration: none;;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "|";
+  font-weight:300;
+  font-size: 20px;
+  left: 0;
+  color: #3D474D;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #000000;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color: #3D474D;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #ffffff;
+	border-radius: 2px;
+
+	font-size: 22px;
+	color: #000000;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/* ------- Footer css code css above------------ */
+
+
+/*-------------------- @MEDIA below ---------------------*/
+
+@media only screen and  (max-width: 1118px) {
+    nav img {
+      left: 8%;
+    }
+}
+
+@media only screen and  (max-width: 944px) {
+    nav img {
+        left: 6%;
+        top: 13px;
+        width: 70px;
+    }
+  
+    nav ul li a {
+        font-size: 17px;
+    }
+
+    nav ul li:hover {
+        transform: scale(1.05); /* Increase the size by 10% on hover (you can adjust this as needed) */
+        opacity: 1;
+    }
+
+    .for_social_icons {
+        display: inline;
+        cursor: pointer;
+    } 
+
+    .for_social_icons:hover {
+        transform: scale(1.05); /* Increase the size by 10% on hover (you can adjust this as needed) */
+        opacity: 1;
+    } 
+}
+
+@media only screen and  (max-width: 860px) {
+
+    .img_face {
+        height: 310px;
+    }
+   
+    label #btn {
+        display: block;
+   }
+
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #485a6c;
+        top: 97px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li:hover {
+        transform: scale(1.05); /* Increase the size by 10% on hover (you can adjust this as needed) */
+        opacity: 1;
+    }
+    
+    .for_social_icons {
+        display: inline;
+        line-height: 10px;
+        size: 7rem;
+        cursor: pointer;
+    }
+
+    .for_social_icons:hover {
+        transform: scale(1.05); /* Increase the size by 10% on hover (you can adjust this as needed) */
+        opacity: 1;
+    } 
+  
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    #check:checked ~ ul {
+        left: 0;
+    }
+
+    #check:checked ~ label #btn {
+        display: none;
+    }
+
+    #check:checked ~ label #cancel {
+        display: block;
+    }
+
+    .footer-distributed{
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+}
+
+/* Apply styles to hide content when the menu is open */
+body.menu-open {
+    overflow: hidden; /* Disable scrolling */
+    
+    .skew-cc{
+        display: none;
+    }
+      
+    .skew-c{
+        display: none;
+    }
+}
