@@ -91,10 +91,6 @@ label #cancel {
     margin-right: 40px;
     cursor: pointer;
     display: none;
-
-    body {
-        display: none;
-    }
 }
 
 #check {
@@ -325,6 +321,149 @@ textarea {
 
 /* ------- Footer css code css above------------ */
 
+/*-------------------- @MEDIA below ---------------------*/
+
+@media only screen and  (max-width: 1118px) {
+  nav img {
+    left: 8%;
+  }
+}
+
+@media only screen and  (max-width: 944px) {
+  nav img {
+    left: 6%;
+    top: 13px;
+    width: 70px;
+  }
+
+  nav ul li a {
+    font-size: 17px;
+  }
+
+  nav ul li:hover {
+    transform: scale(1.05); /* Increase the size by 10% on hover (you can adjust this as needed) */
+    opacity: 1;
+  }
+
+  .for_social_icons {
+    display: inline;
+    cursor: pointer;
+  } 
+
+  .for_social_icons:hover {
+    transform: scale(1.05); /* Increase the size by 10% on hover (you can adjust this as needed) */
+    opacity: 1;
+  } 
+}
+
+@media only screen and  (max-width: 860px) {
+
+  nav img {
+    left: 8%; /* Adjust as needed */
+  }
+
+  .container {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .container_outer_img {
+    margin: 20px;
+  }
+
+  .container_img {
+    width: 60%; /* Adjust as needed */
+    margin: 0 auto;
+  }
+
+  .exp_settings {
+    font-size: 20px;
+    letter-spacing: 5px;
+  }
+
+  .img_face {
+    height: 310px;
+  }
+
+  label #btn {
+    display: block;
+  }
+
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #485a6c;
+    top: 97px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+
+  nav ul li:hover {
+    transform: scale(1.05); /* Increase the size by 10% on hover (you can adjust this as needed) */
+    opacity: 1;
+  }
+  
+  .for_social_icons {
+    display: inline;
+    line-height: 10px;
+    size: 7rem;
+    cursor: pointer;
+  }
+
+  .for_social_icons:hover {
+    transform: scale(1.05); /* Increase the size by 10% on hover (you can adjust this as needed) */
+    opacity: 1;
+  } 
+
+  nav ul li a {
+    font-size: 20px;
+  }
+
+  #check:checked ~ ul {
+    left: 0;
+  }
+
+  #check:checked ~ label #btn {
+    display: none;
+  }
+
+  #check:checked ~ label #cancel {
+    display: block;
+  }
+
+  .footer-distributed{
+  font: bold 14px sans-serif;
+  }
+
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right{
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .footer-left img {
+      cursor: pointer;
+  }
+
+  .footer-distributed .footer-center i{
+  margin-left: 0;
+  }
+}
+
+/*-------------------- @MEDIA above ---------------------*/
+
 * {
   margin: 0;
   padding: 0;
@@ -476,147 +615,6 @@ h1 {
   }
   100% {
     transform: translateX(0px);
-  }
-}
-
-/*-------------------- @MEDIA below ---------------------*/
-
-@media only screen and  (max-width: 1118px) {
-  nav img {
-    left: 8%;
-  }
-}
-
-@media only screen and  (max-width: 944px) {
-  nav img {
-    left: 6%;
-    top: 13px;
-    width: 70px;
-  }
-
-  nav ul li a {
-    font-size: 17px;
-  }
-
-  nav ul li:hover {
-    transform: scale(1.05); /* Increase the size by 10% on hover (you can adjust this as needed) */
-    opacity: 1;
-  }
-
-  .for_social_icons {
-    display: inline;
-    cursor: pointer;
-  } 
-
-  .for_social_icons:hover {
-    transform: scale(1.05); /* Increase the size by 10% on hover (you can adjust this as needed) */
-    opacity: 1;
-  } 
-}
-
-@media only screen and  (max-width: 860px) {
-
-  nav img {
-    left: 8%; /* Adjust as needed */
-  }
-
-  .container {
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-  }
-
-  .container_outer_img {
-    margin: 20px;
-  }
-
-  .container_img {
-    width: 60%; /* Adjust as needed */
-    margin: 0 auto;
-  }
-
-  .exp_settings {
-    font-size: 20px;
-    letter-spacing: 5px;
-  }
-
-  .img_face {
-    height: 310px;
-  }
-
-  label #btn {
-    display: block;
-  }
-
-  ul{
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background-color: #485a6c;
-    top: 97px;
-    left: -100%;
-    text-align: center;
-    transition: all .5s;;
-  }
-
-  nav ul li {
-    display: block;
-    margin: 50px 0;
-    line-height: 30px;
-  }
-
-  nav ul li:hover {
-    transform: scale(1.05); /* Increase the size by 10% on hover (you can adjust this as needed) */
-    opacity: 1;
-  }
-  
-  .for_social_icons {
-    display: inline;
-    line-height: 10px;
-    size: 7rem;
-    cursor: pointer;
-  }
-
-  .for_social_icons:hover {
-    transform: scale(1.05); /* Increase the size by 10% on hover (you can adjust this as needed) */
-    opacity: 1;
-  } 
-
-  nav ul li a {
-    font-size: 20px;
-  }
-
-  #check:checked ~ ul {
-    left: 0;
-  }
-
-  #check:checked ~ label #btn {
-    display: none;
-  }
-
-  #check:checked ~ label #cancel {
-    display: block;
-  }
-
-  .footer-distributed{
-  font: bold 14px sans-serif;
-  }
-
-  .footer-distributed .footer-left,
-  .footer-distributed .footer-center,
-  .footer-distributed .footer-right{
-    display: block;
-    width: 100%;
-    margin-bottom: 40px;
-    text-align: center;
-  }
-
-  .footer-left img {
-      cursor: pointer;
-  }
-
-  .footer-distributed .footer-center i{
-  margin-left: 0;
   }
 }
 
