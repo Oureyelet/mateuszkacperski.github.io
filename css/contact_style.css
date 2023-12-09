@@ -177,10 +177,14 @@ textarea {
 	vertical-align: top;
 }
 
-/* Footer left */
+/* footer-left */
 
 .footer-distributed .footer-left{
 	width: 40%;
+}
+
+.footer-left img {
+  cursor: pointer;
 }
 
 /* The company logo */
