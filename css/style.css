@@ -130,6 +130,14 @@ article {
     height: 150px;
 }
 
+.last_skills_icon {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; /* Center horizontally using margin */
+}
+
 .container_content {
     width: 50%;
 }
@@ -470,12 +478,57 @@ form { max-width:420px; margin:50px auto; }
 /*-------------------- @MEDIA below ---------------------*/
 
 @media only screen and  (max-width: 1118px) {
+
+    .feedback-input {
+        margin-left: 0; /* Remove negative margin on smaller screens */
+    }
+
+    form {
+        max-width: 80%; /* Adjust as needed */
+        margin: 50px auto; /* Center the form on smaller screens */
+    }
+
+    [type="submit"] {
+        margin-left: 0; /* Ensure the button aligns properly on smaller screens */
+    }
+
     nav img {
       left: 8%;
+    }
+    
+}
+
+@media only screen and  (max-width: 1500px) {
+
+    .feedback-input {
+        margin-left: 0; /* Remove negative margin on smaller screens */
+    }
+
+    form {
+        max-width: 80%; /* Adjust as needed */
+        margin: 50px auto; /* Center the form on smaller screens */
+    }
+
+    [type="submit"] {
+        margin-left: 0; /* Ensure the button aligns properly on smaller screens */
     }
 }
 
 @media only screen and  (max-width: 944px) {
+
+    .feedback-input {
+        margin-left: 0; /* Remove negative margin on smaller screens */
+    }
+
+    form {
+        max-width: 80%; /* Adjust as needed */
+        margin: 50px auto; /* Center the form on smaller screens */
+    }
+
+    [type="submit"] {
+        margin-left: 0; /* Ensure the button aligns properly on smaller screens */
+    }
+
     nav img {
         left: 6%;
         top: 13px;
@@ -503,6 +556,19 @@ form { max-width:420px; margin:50px auto; }
 }
 
 @media only screen and  (max-width: 860px) {
+
+    .feedback-input {
+        margin-left: 0; /* Remove negative margin on smaller screens */
+    }
+
+    form {
+        max-width: 80%; /* Adjust as needed */
+        margin: 50px auto; /* Center the form on smaller screens */
+    }
+
+    [type="submit"] {
+        margin-left: 0; /* Ensure the button aligns properly on smaller screens */
+    }
 
     .exp_settings {
         font-size: 20px;
