@@ -126,6 +126,131 @@ article {
     font-size: 4rem;
 }
 
+.skills_icon {
+    height: 150px;
+}
+
+.container_content {
+    width: 50%;
+}
+
+.container_content_inner {
+width: 80%;
+margin-left: 80px;
+}
+
+.container_outer_img {
+margin: 50px;
+width: 50%;
+overflow: hidden;
+}   
+    
+.container_img {
+width: 35%;
+animation: slideIn 1.5s ease-in-out forwards;
+
+}
+
+.title {
+overflow: hidden;
+height: auto;
+}
+
+.feedback-input {
+    color:rgb(0, 0, 0);
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight:500;
+    font-size: 18px;
+    border-radius: 5px;
+    line-height: 22px;
+    background-color: transparent;
+    border:2px solid #0272b8c1;
+    transition: all 0.3s;
+    padding: 13px;
+    margin-bottom: 15px;
+    width:100%;
+    box-sizing: border-box;
+    outline:0;
+    margin-left: -150px;
+}
+
+.feedback-input:focus { border:2px solid #0272b8c1; }
+
+form { max-width:420px; margin:50px auto; }
+
+[type="submit"] {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    width: 100%;
+    background:#0272b8c1;
+    border-radius:5px;
+    border:0;
+    cursor:pointer;
+    color:rgb(0, 0, 0);
+    font-size:24px;
+    padding-top:10px;
+    padding-bottom:10px;
+    transition: all 0.3s;
+    margin-top:-4px;
+    font-weight:700;
+    margin-left: -150px;
+  }
+  [type="submit"]:hover { background:#0272b8c1; }
+
+.btns {
+    height: 100%;
+    position: relative;
+    width: 150px;
+    overflow: hidden;
+}
+
+.btns_more {
+    background: transparent;
+    border: 1px solid var(--contrast-color);
+    border-radius: 50px;
+    padding: 8px 12px;
+    color: #BF307F;
+    font-size: 16px;
+    text-transform: uppercase;
+    position: relative;
+    margin-top: 15px;
+    outline: none;
+    transform: translateY(50px);
+    animation: slideUp .8s ease-in-out  forwards 1s;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    z-index: -10;
+    background-color: var(--contrast-color);
+}
+
+.h-divider {
+    margin: auto;
+    margin-top: 80px;
+    width: 80%;
+    position: relative;
+}
+  
+.h-divider .shadow {
+    overflow: hidden;
+    height: 20px;
+}
+  
+.h-divider .shadow:after {
+    content: '';
+    display: block;
+    margin: -25px auto 0;
+    width: 100%;
+    height: 25px;
+    border-radius: 125px/12px;
+    box-shadow: 0 0 8px black;
+}
+
 /* Main page separator see code below */
 
 .separator {
@@ -462,6 +587,21 @@ article {
 	.footer-distributed .footer-center i{
 		margin-left: 0;
 	}
+
+    .container {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+      }
+    
+      .container_outer_img {
+        margin: 20px;
+      }
+    
+      .container_img {
+        width: 60%; /* Adjust as needed */
+        margin: 0 auto;
+      }
 }
 
 /* Apply styles to hide content when the menu is open */
