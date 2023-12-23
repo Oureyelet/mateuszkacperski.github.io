@@ -557,6 +557,12 @@ form { max-width:420px; margin:50px auto; }
 
 @media only screen and  (max-width: 860px) {
 
+    .p_exp {
+        font-size: 10px; /* Adjust the font size as needed */
+        margin-left: -40px;
+        margin-right: -40px;
+    }
+
     .feedback-input {
         margin-left: 0px; /* Remove negative margin on smaller screens */
     }
