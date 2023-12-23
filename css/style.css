@@ -557,13 +557,6 @@ form { max-width:420px; margin:50px auto; }
 
 @media only screen and  (max-width: 860px) {
 
-    .par{
-        margin-left: 0px;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-    }
-
     .feedback-input {
         margin-left: 0px; /* Remove negative margin on smaller screens */
     }
