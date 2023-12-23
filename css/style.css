@@ -558,12 +558,13 @@ form { max-width:420px; margin:50px auto; }
 @media only screen and  (max-width: 860px) {
 
     .feedback-input {
-        margin-left: 0; /* Remove negative margin on smaller screens */
+        margin-left: 0px; /* Remove negative margin on smaller screens */
     }
 
     form {
-        max-width: 80%; /* Adjust as needed */
-        margin: 50px auto; /* Center the form on smaller screens */
+        width: 200%; /* Set the width to 100% for smaller screens */
+        max-width: none; /* Remove any maximum width constraint */
+        margin: 50px 0;
     }
 
     [type="submit"] {
