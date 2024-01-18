@@ -123,7 +123,8 @@ article {
 .exp_settings {
     font-family: fantasy;
     letter-spacing: 1.5rem;
-    font-size: 4rem;
+    font-size: 100px;
+    text-align: center;
 }
 
 .skills_icon {
@@ -579,8 +580,10 @@ form { max-width:420px; margin:50px auto; }
     }
 
     .exp_settings {
-        font-size: 20px;
+        font-size: 100px;
         letter-spacing: 5px;
+        text-align: center;
+        
     }
 
     .img_face {
