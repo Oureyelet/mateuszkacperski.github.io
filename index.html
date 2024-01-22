@@ -34,6 +34,21 @@
         });
     </script>
 
+    <script>
+        function downloadAndOpen() {
+            // Replace 'yourfile.txt' with the actual file name and 'yourfile.txt' with the actual file URL
+            var fileUrl = 'https://onedrive.live.com/embed?resid=C8740B0F66342B27%212310&authkey=!AMg0upVJI_2Lz2c&em=2';
+            
+            // Create a new window or tab and set the location to the file URL
+            var newWindow = window.open(fileUrl, '_blank');
+
+            // If the new window/tab is blocked by the browser's popup blocker, provide a message
+            if (!newWindow) {
+                alert('Please allow pop-ups to open the file.');
+            }
+        }
+    </script>
+
 </head>
 
 <body>
@@ -52,7 +67,7 @@
             <ul>
                 <li><a href="/index.html">home</a></li>
                 <li><a href="/about.html">goals</a></li>
-                <li><a href="https://onedrive.live.com/embed?resid=C8740B0F66342B27%212310&amp;authkey=!AMg0upVJI_2Lz2c&amp;em=2" target="_blank">resume</a></li>
+                <li><a href="/Mateusz Kacperski -Your new employee.pdf" download target="_blank" onclick="downloadAndOpen();">resume</a></li>
                 <li><a href="/contact.html">contact</a></li>
                 <li class="for_social_icons">
                     <a href="https://www.linkedin.com/in/kacpe/" target="_blank">
