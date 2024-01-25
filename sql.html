@@ -34,6 +34,17 @@
         });
     </script>
 
+    <style>
+    .underlined-italic {
+      text-decoration: underline;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 25vh;
+      margin: 0;
+    }
+    </style>
+
 </head>
 
 <body>
@@ -81,12 +92,83 @@
         <article class="p_exp">
             <br>
 
+            <h3 class="underlined-italic"><i>Chapter 1: Data and Tables</i></h3>
+
+            <br>
+
             <h3>Create database:</h3>
             <p>CREATE DATABASE gregs_list;</p>
             <br>
 
             <h3>Telling the RDBMS i want to use specific database:</h3>
             <p>USE gregs_list;</p>
+            <br>
+
+            <h3>Data types:</h3>
+            <p>CHAR - set length of data, example: CHAR(10)</p>
+            <p>VARCHAR - hold text data of up to 255 characters in length, example: VARCHAR(120)</p>
+            <p>INT - whole numbers, example: INT</p>
+            <p>DEC - decimal numbers, example: DEC(6,2)</p>
+            <p>DATETIME - date and time, example: DATETIME</p>
+            <p>TIMESTAMP - is usually used to capture the current time, example: TIMESTAMP</p>
+            <p>DATE - date, example: DATE</p>
+            <p>BLOB - large text, example: BLOB</p>
+            <br>
+
+            <h3>Creating table:</h3>
+            <p>CREATE TABLE my_contacts</p>
+            <p>&lpar;</p>
+            <p>last_name VARCHAR(30),</p>
+            <p>first_name VARCHAR(20),</p>
+            <p>email VARCHAR(50),</p>
+            <p>gender CHAR(1),</p>
+            <p>birthday DATE,</p>
+            <p>profession VARCHAR(50),</p>
+            <p>location VARCHAR(50),</p>
+            <p>status VARCHAR(20),</p>
+            <p>interests VARCHAR(100),</p>
+            <p>seeking VARCHAR(100)</p>
+            <p>&rpar;;</p>
+            <br>
+
+            <h3>To see how the table you created looks:</h3>
+            <p>DESC my_contacts;</p>
+            <br>
+
+            <h3>Deleting table:</h3>
+            <p>DROP TABLE my_contacts;</p>
+            <br>
+
+            <h3>Removing the data but keep the table structure table:</h3>
+            <p>DELETE FROM my_contacts;</p>
+            <br>
+
+            <h3>Adding data into table:</h3>
+            <p>INSERT INTO my_contacts</p>
+            <p>&lpar;</p>
+                <p>last_name,</p>
+                <p>first_name,</p>
+                <p>email,</p>
+                <p>gender,</p>
+                <p>birthday,</p>
+                <p>profession,</p>
+                <p>location,</p>
+                <p>status,</p>
+                <p>interests,</p>
+                <p>seeking</p>
+            <p>&rpar;</p>
+            <p>VALUES</p>
+                <p>'Kacperska',</p>
+                <p>'Sophie',</p>
+                <p>'sophiekacperska@gmail.com',</p>
+                <p>'F',</p>
+                <p>'2022-08-12',</p>
+                <p>'Doctor',</p>
+                <p>'Sheffield',</p>
+                <p>'Holy',</p>
+                <p>'pray',</p>
+                <p>'God'</p>
+            <p>&rpar;;</p>
             <br>
 
         </article>
