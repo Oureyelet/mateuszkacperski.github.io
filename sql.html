@@ -43,6 +43,12 @@
       height: 25vh;
       margin: 0;
     }
+
+    .b_u {
+      text-decoration: underline;
+      color: rgb(42, 165, 71);
+      font-weight: bold;
+    }
     </style>
 
 </head>
@@ -80,15 +86,17 @@
         <h2>&nbsp;</h2>
         <img class="img_face" src="/img/skills icon/sql.png" alt="face image">
         <h2>&nbsp;</h2>
+
+        <h1>Head First SQL by Lynn Beighley</h1>
+
     </section>
+
+    <a class="links img_face" href="https://docs.google.com/file/d/0BxbayAAcS8IiOVoza3E3WEhwUDA/edit?resourcekey=0-JCUQppBo3pYp7gJdE1HadA" target="_blank"><i>Head First SQL.pdf</i></a>
 
     <article>
 
         <div class="skew-c"></div>
         <div class="colour-block">
-        <h1>Head First SQL by Lynn Beighley</h1>
-        <br>
-        <a class="links" href="https://docs.google.com/file/d/0BxbayAAcS8IiOVoza3E3WEhwUDA/edit?resourcekey=0-JCUQppBo3pYp7gJdE1HadA" target="_blank"><i>Head First SQL.pdf</i></a>
         <article class="p_exp">
             <br>
 
@@ -131,7 +139,7 @@
             <p>&rpar;;</p>
             <br>
 
-            <h3>To see how the table you created looks:</h3>
+            <h3>To see structure of the table you created:</h3>
             <p>DESC my_contacts;</p>
             <br>
 
@@ -171,13 +179,54 @@
             <p>&rpar;;</p>
             <br>
 
+            <h3>Showing data from your table:</h3>
+            <p>SELECT * FROM my_contacts;</p>
+            <br>
+
+            <h3>Set up your table to not accept NULL values for column:</h3>
+            <p>CREATE TABLE my_contacts</p>
+            <p>&lpar;</p>
+            <p>last_name VARCHAR(30) <b class="b_u">NOT NULL</b>,</p>
+            <p>first_name VARCHAR(20) <b class="b_u">NOT NULL</b>,</p>
+            <p>email VARCHAR(50),</p>
+            <p>gender CHAR(1) NOT NULL,</p>
+            <p>birthday DATE NOT NULL,</p>
+            <p>profession VARCHAR(50),</p>
+            <p>location VARCHAR(50),</p>
+            <p>status VARCHAR(20),</p>
+            <p>interests VARCHAR(100),</p>
+            <p>seeking VARCHAR(100)</p>
+            <p>&rpar;;</p>
+            <br>
+
+            <h3>DEFAULT value in CREATE TABLE:</h3>
+            <p>CREATE TABLE my_contacts</p>
+            <p>&lpar;</p>
+            <p>last_name VARCHAR(30) NOT NULL,</p>
+            <p>first_name VARCHAR(20) NOT NULL,</p>
+            <p>email VARCHAR(50),</p>
+            <p>gender CHAR(1) NOT NULL,</p>
+            <p>birthday DATE NOT NULL,</p>
+            <p>profession VARCHAR(50),</p>
+            <p>location VARCHAR(50) NOT NULL <b class="b_u">DEFAULT 'UK'</b>,</p>
+            <p>status VARCHAR(20),</p>
+            <p>interests VARCHAR(100),</p>
+            <p>seeking VARCHAR(100)</p>
+            <p>&rpar;;</p>
+            <br>
         </article>
 
         </div>
 
         <div class="skew-cc"></div>
         <div class="white-block">
-        <h1 class="exp_settings">...</h1>
+        <h3 class="underlined-italic"><i>Chapter 2: The SELECT Statement</i></h3>
+        
+            <br>
+
+            <h3>Create database:</h3>
+            <p>CREATE DATABASE gregs_list;</p>
+            <br>
             
         </div>
 

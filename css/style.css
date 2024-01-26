@@ -104,7 +104,7 @@ label #cancel {
 }
 
 .links {
-    color: #ffffff;
+    color: #264d3b;
     font-weight: 700;
     cursor: pointer;
 }
@@ -129,6 +129,11 @@ article {
 
 .skills_icon {
     height: 150px;
+}
+
+.skills_icon:hover {
+    transform: scale(1.15); /* Increase the size by 10% on hover (you can adjust this as needed) */
+    opacity: 1;
 }
 
 .last_skills_icon {
