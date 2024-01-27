@@ -84,7 +84,7 @@
 
     <section class="img_face">
         <h2>&nbsp;</h2>
-        <img class="img_face" src="/img/skills icon/sql.png" alt="face image">
+        <img class="img_face skills_icon" src="/img/skills icon/sql.png" alt="face image">
         <h2>&nbsp;</h2>
 
         <h1>Head First SQL by Lynn Beighley</h1>
@@ -98,7 +98,6 @@
         <div class="skew-c"></div>
         <div class="colour-block">
         <article class="p_exp">
-            <br>
 
             <h3 class="underlined-italic"><i>Chapter 1: Data and Tables</i></h3>
 
@@ -166,6 +165,7 @@
                 <p>seeking</p>
             <p>&rpar;</p>
             <p>VALUES</p>
+            <p>&lpar;</p>
                 <p>'Kacperska',</p>
                 <p>'Sophie',</p>
                 <p>'sophiekacperska@gmail.com',</p>
@@ -221,11 +221,18 @@
         <div class="skew-cc"></div>
         <div class="white-block">
         <h3 class="underlined-italic"><i>Chapter 2: The SELECT Statement</i></h3>
-        
+
             <br>
 
-            <h3>Create database:</h3>
-            <p>CREATE DATABASE gregs_list;</p>
+            <h3>To find something specific in your table use <b class="b_u">WHERE</b>:</h3>
+            <p>USE gregs_list;</p>
+            <p>SELECT * FROM my_contacts</p>
+            <p><b class="b_u">WHERE</b> first_name = 'Sophie';</p>
+            <br>
+
+            <h3>Showing only column we want to see:</h3>
+            <p>SELECT last_name, email, location;</p>
+            <p>FROM my_contacts;</p>
             <br>
             
         </div>
