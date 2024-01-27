@@ -51,9 +51,33 @@
     }
     </style>
 
+    <script>
+        // Add this script to handle scroll events
+        window.addEventListener("scroll", function () {
+        var scrollButton = document.getElementById("scrollToTop");
+        if (window.scrollY > 100) {
+            document.body.classList.add("scroll-down");
+        } else {
+            document.body.classList.remove("scroll-down");
+        }
+        });
+    
+        // Add this script to handle click event for scrolling to top
+        document.getElementById("scrollToTop").addEventListener("click", function () {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
+        });
+    </script>
+
+   
+
 </head>
 
 <body>
+
+    <a href="#" id="scrollToTop" class="scroll-to-top">↑</a>
 
     <header>
         <nav>
@@ -84,7 +108,7 @@
 
     <section class="img_face">
         <h2>&nbsp;</h2>
-        <img class="skills_icon" src="/img/skills icon/sql.png" alt="face image">
+        <img class="skills_icon_2" src="/img/skills icon/sql.png" alt="face image">
         <h2>&nbsp;</h2>
 
         <h1>Head First SQL by Lynn Beighley</h1>
@@ -92,6 +116,21 @@
     </section>
 
     <a class="links img_face" href="https://docs.google.com/file/d/0BxbayAAcS8IiOVoza3E3WEhwUDA/edit?resourcekey=0-JCUQppBo3pYp7gJdE1HadA" target="_blank"><i>Head First SQL.pdf</i></a>
+    <br>
+
+    <ul>
+        <li>
+            <a href="#section1">
+                <p class="img_face">Chapter 1: Data and Tables</p>
+            </a>
+        </li>
+
+        <li>
+            <a href="#section2">
+                <p class="img_face">Chapter 2: The SELECT Statement</p>
+            </a>
+        </li>
+    </ul>
 
     <article>
 
@@ -99,7 +138,7 @@
         <div class="colour-block">
         <article class="p_exp">
 
-            <h3 class="underlined-italic"><i>Chapter 1: Data and Tables</i></h3>
+            <h3 class="underlined-italic" id="section1"><i>Chapter 1: Data and Tables</i></h3>
 
             <br>
 
@@ -220,7 +259,7 @@
 
         <div class="skew-cc"></div>
         <div class="white-block">
-        <h3 class="underlined-italic"><i>Chapter 2: The SELECT Statement</i></h3>
+        <h3 class="underlined-italic" id="section2"><i>Chapter 2: The SELECT Statement</i></h3>
 
             <br>
 
@@ -233,6 +272,13 @@
             <h3>Showing only column we want to see:</h3>
             <p>SELECT last_name, email, location</p>
             <p>FROM my_contacts;</p>
+            <br>
+
+            <h3>Combining your queries by <b class="b_u">AND</b>:</h3>
+            <p>SELECT location</p>
+            <p>FROM doughnut_rating</p>
+            <p>WHERE type = 'plain glazed'</p>
+            <p class="b_u">AND</p>
             <br>
             
         </div>

@@ -131,6 +131,10 @@ article {
     height: 200px;
 }
 
+.skills_icon_2 {
+    height: 200px;
+}
+
 .skills_icon:hover {
     transform: scale(1.15); /* Increase the size by 10% on hover (you can adjust this as needed) */
     opacity: 1;
@@ -525,6 +529,10 @@ form { max-width:420px; margin:50px auto; }
         height: 150px;
     }
 
+    .skills_icon_2 {
+        height: 150px;
+    }
+
     .feedback-input {
         margin-left: 0; /* Remove negative margin on smaller screens */
     }
@@ -571,6 +579,10 @@ form { max-width:420px; margin:50px auto; }
     }
 
     .skills_icon {
+        height: 50px;
+    }
+    
+    .skills_icon_2 {
         height: 50px;
     }
 
@@ -704,4 +716,29 @@ body.menu-open {
     .skew-c{
         display: none;
     }
+}
+
+/* Scroll to top class */
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #0272b8c1;
+    color: #fff;
+    font-size: 20px;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.scroll-to-top:hover {
+    background-color: #0272b8c1;
+}
+
+/* Show the button when the user scrolls down */
+body.scroll-down .scroll-to-top {
+    opacity: 1;
 }

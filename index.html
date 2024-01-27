@@ -49,9 +49,31 @@
         }
     </script>
 
+    <script>
+        // Add this script to handle scroll events
+        window.addEventListener("scroll", function () {
+        var scrollButton = document.getElementById("scrollToTop");
+        if (window.scrollY > 100) {
+            document.body.classList.add("scroll-down");
+        } else {
+            document.body.classList.remove("scroll-down");
+        }
+        });
+    
+        // Add this script to handle click event for scrolling to top
+        document.getElementById("scrollToTop").addEventListener("click", function () {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
+        });
+    </script>
+
 </head>
 
 <body>
+
+    <a href="#" id="scrollToTop" class="scroll-to-top">↑</a>
 
     <header>
         <nav>
