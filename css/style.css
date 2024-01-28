@@ -103,6 +103,15 @@ label #cancel {
     margin-top: 7px;
 }
 
+.menu_sql {
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+    margin-top: 7px;
+}
+
+
+
 .links {
     color: #264d3b;
     font-weight: 700;
@@ -576,6 +585,10 @@ form { max-width:420px; margin:50px auto; }
 
     .img_face {
         height: 310px;
+    }
+
+    .menu_sql {
+        height: 50px;
     }
 
     .skills_icon {
