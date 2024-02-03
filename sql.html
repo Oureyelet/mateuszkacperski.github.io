@@ -291,8 +291,33 @@
             <p>&lt;=</p>
             <br>
 
-            <p>Finding numeric data with Comparison Operators 88 page</p>
+            <h3>Combine two queries by using word <b class="b_u">OR</b>:</h3>
+            <p>SELECT * FROM my_contacts;</p>
+            <p>WHERE email = example1@gmail.com</p>
+            <p class="b_u">OR</p>
+            <p>email = example2@gmail.com</p>
+            <br>
+
+            <h3>Looks for part of a text string and returns any matches with word <b class="b_u">LIKE</b>:</h3>
+            <i>(Place a percent sign inside the single quotes. This tells your software you're looking for all values in the location column that end with CA)</i>
+            <p>SELECT * FROM my_contacts</p>
+            <p>WHERE location <b class="b_u">LIKE</b> '%CS';</p>
+            <br>
             
+            <h3><b class="b_u">BETWEEN</b> can help us with certain range of numbers of alphabatical character:</h3>
+            <p>SELECT * FROM drink_info;</p>
+            <p>WHERE calories <b class="b_u">BETWEEK</b> 30 AND 60;</p>
+            <p>AND</p>
+            <p>name_drink <b class="b_u">BETWEEK</b> 'a' AND 'c'</p>
+            <br>
+
+            <h3>Use <b class="b_u">IN</b> word with a set of values in parentheses to find words or numbers you are looking for:</h3>
+            <i>By addinng the keyword NOT to our IN statement. NOT gives you the opposite results, anything that doesn’t match the set.</i>
+            <p>SELECT * FROM my_contacts;</p>
+            <p>WHERE rating <b class="b_u">IN</b> ('happy','sad','pretty good')</p>
+            <p>AND</p>
+            <p>cost <b class="b_u">IN</b> (5.5, 26);</p>
+            <br>
         
         </div>
 
