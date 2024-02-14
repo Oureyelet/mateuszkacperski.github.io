@@ -139,7 +139,7 @@
 
         <li>
             <a href="#section4">
-                <p class="menu_sql">Chapter 4: smart table design</p>
+                <p class="menu_sql">Chapter 4: Smart Table Design</p>
             </a>
         </li>
 
@@ -416,29 +416,76 @@
             <p>drink_name= 'Lime Fizz';</p>
             <br>
 
-            <h3>Atomic data / value :</h3>
-            <p>Rule 1: A column with atomic data can't have several values of the same type of data in that column.</p>
-            <p>Rule 2: A table with atomic data can't have multiple columns with the same type of data.</p>
-
-            <h3>Primary Key:</h3>
-            <p>A primary key is a column in your table that makes each record unique.</p>
-
-            <h3>First Normal Form:</h3>
-            <p>180</p>
-
         </div>
 
         <div class="skew-cc"></div>
         <div class="white-block">
-        <h3 class="underlined-italic" id="section3"><i>Chapter 4: smart table design</i></h3>
+        <h3 class="underlined-italic" id="section4"><i>Chapter 4: Smart Table Design</i></h3>
 
             <br>
+            <h3>Atomic data / value :</h3>
+            <p>Rule 1: A column with atomic data can't have several values of the same type of data in that column.</p>
+            <p>Rule 2: A table with atomic data can't have multiple columns with the same type of data.</p>
 
-            <h3>If value contain apostrofe put <b class="b_u">\</b> backslash before it:</h3>
-            <p>INSERT INTO clown_info</p>
-            <p>VALUES</p>
-            <p>&lpar;'MR. Kop<b class="b_u">\</b>'ye'&rpar;;</p>
+            <br>    
+            <h3>Primary Key:</h3>
+            <p>A primary key is a column in your table that makes each record unique.</p>
+
             <br>
+            <h3>First Normal Form:</h3>
+            <p>180</p>
+
+            <br>
+            <h3>The statement <b class="b_u">SHOW CREATE TABLE</b> will return a CREATE TABLE statement that can exactly recreate our table, minus any data in it.:</h3>
+            <p><b class="b_u">SHOW CREATE TABLE</b> my_contacts;</p>
+
+            <br>    
+            <h3>To display all the columns in your table and their data type along with any other column-specific details:</h3>
+            <p><b class="b_u">SHOW COLUMNS</b> FROM my_contacts;</p>
+
+            <br>
+            <h3>The statement <b class="b_u">SHOW CREATE DATABASE</b> you'll get the command that would exactly recreate your database:</h3>
+            <p><b class="b_u">SHOW CREATE DATABASE</b> databasename;</p>
+
+            <br>
+            <h3>To display any columns that are indexed and what type of index they have:</h3>
+            <p><b class="b_u">SHOW INDEX FROM</b> tablename;</p>
+
+            <br>
+            <h3>Creating / putting Primary Key in your table:</h3>
+            <p>CREATE TABLE my_contacts</p>
+            <p>&lpar;</p>
+            <p><b class="b_u">contact_id INT NOT NULL </b><i>&lpar;Remember, the primary key column has to be NOT NULL!&rpar;</i></p>
+            <p>last_name VARCHAR(30),</p>
+            <p>first_name VARCHAR(20),</p>
+            <p>email VARCHAR(50),</p>
+            <p>gender CHAR(1),</p>
+            <p>birthday DATE,</p>
+            <p>profession VARCHAR(50),</p>
+            <p>location VARCHAR(50),</p>
+            <p>status VARCHAR(20),</p>
+            <p>interests VARCHAR(100),</p>
+            <p>seeking VARCHAR(100)</p>
+            <p><b class="b_u">PRIMARY KEY (contact_id)</b> <i>&lpar;Here's where we specifying the primary key.&rpar;</i></p>
+            <p>&rpar;;</p>
+
+            <br>
+            <h3>Auto increment Primary Key value:</h3>
+            <p>CREATE TABLE my_contacts</p>
+            <p>&lpar;</p>
+            <p>contact_id INT NOT NULL <b class="b_u">AUTO_INCREMENT</b></p>
+            <p>last_name VARCHAR(30),</p>
+            <p>first_name VARCHAR(20),</p>
+            <p>email VARCHAR(50),</p>
+            <p>gender CHAR(1),</p>
+            <p>birthday DATE,</p>
+            <p>profession VARCHAR(50),</p>
+            <p>location VARCHAR(50),</p>
+            <p>status VARCHAR(20),</p>
+            <p>interests VARCHAR(100),</p>
+            <p>seeking VARCHAR(100)</p>
+            <p>PRIMARY KEY (contact_id)</p>
+            <p>&rpar;;</p>
 
         </div>
         <br>
