@@ -145,7 +145,7 @@
 
         <li>
             <a href="#section5">
-                <p class="menu_sql">Chapter 5: </p>
+                <p class="menu_sql">Chapter 5: ALTER</p>
             </a>
         </li>
 
@@ -433,7 +433,7 @@
 
             <br>
             <h3>First Normal Form:</h3>
-            <p>180</p>
+            <p>Each row of data must contain atomic values, and each row of data must have a unique identifier.</p>
 
             <br>
             <h3>The statement <b class="b_u">SHOW CREATE TABLE</b> will return a CREATE TABLE statement that can exactly recreate our table, minus any data in it.:</h3>
@@ -489,16 +489,18 @@
 
             <br>
             <h3>Adding a PRIMARY KEY to an existing table with word <b class="b_u">ALTER</b>:</h3>
-            <p> </p>
+            <p><b class="b_u">ALTER</b> TABLE my_contacts</p>
+            <p>ADD COLUMN contact_id INT NOT NULL AUTO_INCREMENT FIRST,</p>
+            <p>ADD PRIMARY KEY (contact_id);</p>
+            
 
 
         </div>
-        <br>
-        <br>
 
+        <br>
         <div class="skew-c"></div>
         <div class="colour-block">
-        <h3 class="underlined-italic" id="section5"><i>Chapter 5: </i></h3>
+        <h3 class="underlined-italic" id="section5"><i>Chapter 5: ALTER</i></h3>
 
             <br>
 
