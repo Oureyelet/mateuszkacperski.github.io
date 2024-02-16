@@ -504,10 +504,29 @@
 
             <br>
 
-            <h3>If value contain apostrofe put <b class="b_u">\</b> backslash before it:</h3>
-            <p>INSERT INTO clown_info</p>
-            <p>VALUES</p>
-            <p>&lpar;'MR. Kop<b class="b_u">\</b>'ye'&rpar;;</p>
+            <h3>Adding colum to an existing table to certain place in table with word <b class="b_u">AFTER</b> or <b class="b_u">BEFORE</b>:</h3>
+            <p>ALTER TABLE my_contacts</p>
+            <p>ADD COLUMN phone INT NOT NULL <b class="b_u">AFTER</b> column_before,</p>
+            <br>
+
+            <h3>Renaming the column:</h3>
+            <p>ALTER TABLE projekts</p>
+            <p>CHANGE COLUMN old_column_name new_column_name new_data_type [other_modifiers];</p>
+            <br>
+
+            <h3>Change the data type of a column with <b class="b_u">MODIFY</b> keyword:</h3>
+            <p>ALTER TABLE projekts</p>
+            <p><b class="b_u">MODIFY</b> COLUMN proj_desc VARCHAR(120);</p>
+            <br>
+
+            <h3>DROP your column:</h3>
+            <p>ALTER TABLE projekts</p>
+            <p><b class="b_u">DROP</b> COLUMN start_date;</p>
+            <br>
+
+            <h3>Renaming the table:</h3>
+            <p>RENAME TABLE old_table_name TO new_table_name;</p>
+            
             <br>
 
 
