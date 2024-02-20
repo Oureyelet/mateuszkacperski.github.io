@@ -512,11 +512,14 @@
             <h3>Renaming the column:</h3>
             <p>ALTER TABLE projekts</p>
             <p>CHANGE COLUMN old_column_name new_column_name new_data_type [other_modifiers];</p>
+            <p><i>Use CHANGE when you want to change both the name and the data type of a column..</i></p>
+            
             <br>
 
             <h3>Change the data type of a column with <b class="b_u">MODIFY</b> keyword:</h3>
             <p>ALTER TABLE projekts</p>
             <p><b class="b_u">MODIFY</b> COLUMN proj_desc VARCHAR(120);</p>
+            <p><i>You can use the MODIFY keyword. It changes only the data type of a column and leaves the name alone.</i></p>
             <br>
 
             <h3>DROP your column:</h3>
@@ -534,6 +537,12 @@
 
             <h3>To SELECT everything in front of the specific character or string:</h3>
             <p>SELECT SUBSTRING_INDEX(location, ',', 1) FROM my_contacts;</p>
+            <br>
+
+            <h3>Use a current column to fill a new column:</h3>
+            <p>UPDATE my_contacts</p>
+            <p>SET new_still_empty_colum = old_colum_with_value</p>
+            <p><i>Each row in our table goint to set, one at a time, to this value</i></p>
             <br>
 
 
