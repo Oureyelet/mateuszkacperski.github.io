@@ -151,7 +151,7 @@
 
         <li>
             <a href="#section6">
-                <p class="menu_sql">Chapter 6: </p>
+                <p class="menu_sql">Chapter 6: advanced SELECT</p>
             </a>
         </li>
 
@@ -545,19 +545,27 @@
             <p><i>Each row in our table goint to set, one at a time, to this value</i></p>
             <br>
 
-
         </div>
 
         <div class="skew-cc"></div>
         <div class="white-block">
-        <h3 class="underlined-italic" id="section6"><i>Chapter 6:</i></h3>
+        <h3 class="underlined-italic" id="section6"><i>Chapter 6: advanced SELECT</i></h3>
 
             <br>
 
-            <h3>If value contain apostrofe put <b class="b_u">\</b> backslash before it:</h3>
-            <p>INSERT INTO clown_info</p>
-            <p>VALUES</p>
-            <p>&lpar;'MR. Kop<b class="b_u">\</b>'ye'&rpar;;</p>
+            <h3>AND & OR:</h3>
+            <p>Using AND: Both conditions must be true</p>
+            <p>Using OR: Either conditions must be true</p>
+            <br>
+
+            <h3>If statement in SQL:</h3>
+            <p>UPDATE movie_table</p>
+            <p>SET temp =</p>
+            <p>CASE</p>
+            <p>&nbsp;WHEN category = 'gore' OR category = 'horror'</p>
+            <p>&nbsp;&nbsp;THEN 1</p>
+            <p>&nbsp;ELSE 0</p>
+            <p>END;</p>
             <br>
 
 
