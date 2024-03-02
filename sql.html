@@ -576,6 +576,32 @@
             <p><b class="b_u">ORDER BY</b> title</p>
             <br>
 
+            <h3>Function SUM() for add them for us:</h3>
+            <p>SELECT SUM(colum_name)</p>
+            <p>FROM table_name</p>
+            <p>WHERE column_name = 'whatever you looking for'</p>
+            <br>
+
+            <h3>SUM all of them at once with <b class="b_u">GROUP BY</b>:</h3>
+            <p>SELECT first_name, SUM(colum_name)</p>
+            <p>FROM cookie_sales</p>
+            <p><b class="b_u">GROUP BY</b> first_name</p>
+            <p>ORDER BY SUM(colum_name)</p>
+            <br>
+            
+            <h3>keyword <b class="b_u">DISTINCT</b> to get rid of duplications:</h3>
+            <p>SELECT <b class="b_u">DISTINCT</b> sale_date</p>
+            <p>FROM cookie_sales</p>
+            <br>
+
+            <h3>keyword <b class="b_u">LIMIT</b>:</h3>
+            <p>SELECT first_name, SUM(colum_name)</p>
+            <p>FROM cookie_sales</p>
+            <p><b class="b_u">GROUP BY</b> first_name</p>
+            <p>ORDER BY SUM(colum_name)</p>
+            <p><b class="b_u">LIMIT</b> 2</p>
+            <br>
+
         </div>
 
         <div class="skew-c"></div>
