@@ -361,7 +361,7 @@
             <h3>Looks for part of a text string and returns any matches with word <b class="b_u">LIKE</b>:</h3>
             <i>(Place a percent sign inside the single quotes. This tells your software you're looking for all values in the location column that end with CA)</i>
             <p>SELECT * FROM my_contacts</p>
-            <p>WHERE location <b class="b_u">LIKE</b> '%CS';</p>
+            <p>WHERE location <b class="b_u">LIKE</b> '%CA';</p>
             <br>
             
             <h3><b class="b_u">BETWEEN</b> can help us with certain range of numbers of alphabatical character:</h3>
@@ -537,6 +537,10 @@
 
             <h3>To SELECT everything in front of the specific character or string:</h3>
             <p>SELECT SUBSTRING_INDEX(location, ',', 1) FROM my_contacts;</p>
+            <p><i>SUBSTRING_INDEX: "This grabs part of the column, or substring. It looks for the string in single quotes (in this case, it’s a comma) and grabs everything in front of it."</i></p>
+            <p><i>location: "Again, the column name."</i></p>
+            <p><i>',': "Here’s the comma the command is looking for."</i></p>
+            <p><i>1 : "This is the tricky part. It’s “1” because it’s looking for the first comma. If it were “2” it would keep going until it found a second comma and grab everything in front of that.."</i></p>
             <br>
 
             <h3>Use a current column to fill a new column:</h3>
