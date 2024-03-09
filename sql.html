@@ -620,10 +620,17 @@
 
             <br>
 
-            <h3>If value contain apostrofe put <b class="b_u">\</b> backslash before it:</h3>
-            <p>INSERT INTO clown_info</p>
-            <p>VALUES</p>
-            <p>&lpar;'MR. Kop<b class="b_u">\</b>'ye'&rpar;;</p>
+            <h3>The FOREIGN KEY is a column in a table that references the PRIMARY KEY of another table.</h3>
+            <br>
+
+            <h3>How to create table with CONSTRAINT FOREIGN KEY REFERENCES to Parent Table (so child knows where to looking for):</h3>
+            <p>CREATE TABLE interest</p>
+            <p>&lpar;</p>
+            <p>int_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,</p>
+            <p>interest VARCHAR(50) NOT NULL,</p>
+            <p>contact_id INT NOT NULL,</p>
+            <p>CONSTRAINT my_contacts_contact_id_fk FOREIGN KEY (contact_it) REFERENCES my_contacts (contact_id)</p>
+            <p>&rpar;;</p>
             <br>
 
 
