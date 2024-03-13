@@ -144,6 +144,10 @@ article {
     height: 200px;
 }
 
+.skills_icon_3 {
+    height: 400px;
+}
+
 .skills_icon:hover {
     transform: scale(1.15); /* Increase the size by 10% on hover (you can adjust this as needed) */
     opacity: 1;

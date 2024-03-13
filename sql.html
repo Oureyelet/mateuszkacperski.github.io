@@ -432,8 +432,10 @@
             <p>A primary key is a column in your table that makes each record unique.</p>
 
             <br>
-            <h3>First Normal Form:</h3>
+            <h3>1NF First Normal Form:</h3>
             <p>Each row of data must contain atomic values, and each row of data must have a unique identifier.</p>
+            <p>Rule 1: Columns contain only atomic values</p>
+            <p>Rule 2: No repeating groups of data</p>
 
             <br>
             <h3>The statement <b class="b_u">SHOW CREATE TABLE</b> will return a CREATE TABLE statement that can exactly recreate our table, minus any data in it.:</h3>
@@ -634,20 +636,30 @@
             <br>
 
             <h3>Patterns of data: one-to-one.</h3>
-            <img class="skills_icon" src="/img/SQL/one-to-one.png" alt="logo">
+            <img class="skills_icon_3" src="/img/SQL/one-to-one.png" alt="logo">
             <br>
 
             <br>
             <h3>Patterns of data: one-to-many.</h3>
-            <img class="skills_icon" src="/img/SQL/one-to-many.png" alt="logo">
+            <img class="skills_icon_3" src="/img/SQL/one-to-many.png" alt="logo">
             <br>
 
             <br>
             <h3>Patterns of data: getting to many-to-many.</h3>
             <h3>Many-to-Many: a junction table holds a key from each table.</h3>
-            <img class="skills_icon" src="/img/SQL/many-to-many.png" alt="logo">
-            <img class="skills_icon" src="/img/SQL/many-to-many2.png" alt="logo">
+            <img class="skills_icon_3" src="/img/SQL/many-to-many.png" alt="logo">
+            <img class="skills_icon_3" src="/img/SQL/many-to-many2.png" alt="logo">
             <br>
+
+            <h3>A COMPOSITE KEY is a PRIMARY KEY composed of multiple columns, creating a unique key.</h3>
+            <br>
+
+            <h3>2NF First Normal Form:</h3>
+            <p>Rule 1: Be in 1NF</p>
+            <p>Rule 2: Have no partial functional dependencies.</p>
+            <img class="skills_icon_3" src="/img/SQL/partial_functional_dependency.png" alt="logo">
+            <br>
+
 
 
         </div>
