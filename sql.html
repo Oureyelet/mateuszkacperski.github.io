@@ -612,6 +612,7 @@
             <p>SELECT COUNT(sales) AS total_numbers_of_sales, SUM(sales) AS total</p>
             <p>FROM cookie_sales</p>
             <br>
+            
 
 
         </div>
@@ -654,12 +655,20 @@
             <h3>A COMPOSITE KEY is a PRIMARY KEY composed of multiple columns, creating a unique key.</h3>
             <br>
 
-            <h3>2NF First Normal Form:</h3>
+            <br>
+            <h3>2NF Second Normal Form:</h3>
             <p>Rule 1: Be in 1NF</p>
             <p>Rule 2: Have no partial functional dependencies.</p>
+            <p>Any table with an artificial primary key (or know as a surrogate keys - include auto-incrementing integer columns (like ID or CustomerID) or globally unique identifiers (GUIDs)) and no composite primary key is always 2NF.</p>
             <img class="skills_icon_3" src="/img/SQL/partial_functional_dependency.png" alt="logo">
             <br>
 
+            <br>
+            <h3>3NF Third Normal Form:</h3>
+            <p>Rule 1: Be in 2NF</p>
+            <p>Rule 2: Have no transitive dependencies.</p>
+            <p>A transitive functional dependency means that any non-key column is related to any of the other non-key columns. If changing any of the non-key columns might cause any of the other columns to change, you have a transitive dependency.</p>
+            <br>
 
 
         </div>
