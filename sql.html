@@ -727,6 +727,64 @@
 
             <p>He died but he is still alive !</p>
 
+            FOR DOCUMATION PROJECT:    
+
+            CREATE TABLE profession
+            (
+                prof_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+                profession VARCHAR(30) NOT NULL
+            );
+
+            CREATE TABLE zip_code
+            (
+                zip_code INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+                city VARCHAR(30) NOT NULL,
+                state VARCHAR(30) NOT NULL
+            );
+
+            CREATE TABLE status
+            (
+                status_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+                status VARCHAR(30) NOT NULL
+            );
+
+            CREATE TABLE interests
+            (
+                interest_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+                interest VARCHAR(30) NOT NULL
+            );
+
+            CREATE TABLE seeking
+            (
+                seeking_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+                seeking VARCHAR(30) NOT NULL
+            );
+
+            CREATE TABLE my_contacts
+            (
+                contact_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+                last_name VARCHAR(30) NOT NULL,
+                first_name VARCHAR(30) NOT NULL,
+                phone VARCHAR(30),
+                email VARCHAR(30),
+                gender CHAR(1) NOT NULL,
+                birthday DATE NOT NULL,
+                prof_id INT NOT NULL,
+                zip_code INT NOT NULL,
+                status_id INT NOT NULL,
+                CONSTRAINT my_contact_prof_id_fk FOREIGN KEY (prof_id) REFERENCES profession (prof_id),
+                CONSTRAINT my_contact_zip_code_fk FOREIGN KEY (zip_code) REFERENCES zip_code (zip_code),
+                CONSTRAINT my_contact_status_id_fk FOREIGN KEY (status_id) REFERENCES status (status_id)
+            );
+
+            CREATE TABLE contact_interest
+            (
+                contact_id INT NOT NULL,
+                interest_id INT NOT NULL,
+                CONSTRAINT contact_interest_contact_id_fk FOREIGN KEY (contact_id) REFERENCES my_contacts (contact_id),
+                CONSTRAINT contact_interest_interest_id_fk FOREIGN KEY (interest_id) REFERENCES interests (interest_id)
+            );
+
         </div>
 
         <div class="skew-c"></div>
