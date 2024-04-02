@@ -785,6 +785,100 @@
                 CONSTRAINT contact_interest_interest_id_fk FOREIGN KEY (interest_id) REFERENCES interests (interest_id)
             );
 
+            CREATE TABLE contact_seeking
+            (
+                contact_id INT NOT NULL,
+                seeking_id INT NOT NULL,
+                CONSTRAINT contact_seeking_contact_id_fk FOREIGN KEY (contact_id) REFERENCES my_contacts (contact_id),
+                CONSTRAINT contact_seeking_seeking_id_fk FOREIGN KEY (seeking_id) REFERENCES seeking (seeking_id)
+            );
+
+            INSERT INTO my_contacts
+            VALUES
+            (null, 'Cwik', 'Wojciech', '+48456789321', 'wc@gmail.com', 'M', '1990-12-22', 1, '10001', 9),
+            (null, 'Cwik', 'Jagoda', '+48456789321', 'jc@gmail.com', 'F', '1991-11-21', 2, '19101', 1),
+            (null, 'Kacperski', 'Mateusz', '+48456789321', 'mk@gmail.com', 'M', '1992-10-3', 6, '60601', 2),
+            (null, 'Kacperska', 'Ania', '+48456789321', 'ak@gmail.com', 'F', '1993-09-2', 8, '75201', 3),
+            (null, 'Kacperska', 'Sophie', '+48456789321', 'sk@gmail.com', 'F', '1994-08-13', 2, '77001', 8),
+            (null, 'Szczesniak', 'Robert', '+48456789321', 'rs@gmail.com', 'M', '1995-07-3', 6, '78201', 8),
+            (null, 'Szczesniak', 'Kamila', '+48456789321', 'ks@gmail.com', 'F', '1996-06-13', 3, '85001', 6),
+            (null, 'Szczesniak', 'Dacjan', '+48456789321', 'ds@gmail.com', 'M', '1997-05-7', 8, '90001', 4),
+            (null, 'Szczesniak', 'Holly', '+48456789321', 'hs@gmail.com', 'F', '1998-04-8', 2, '92101', 4),
+            (null, 'Kasia', 'Szczesniak', '+48456789321', 'ks@gmail.com', 'F', '1999-03-9', 10, '95101', 2);
+
+            INSERT INTO seeking
+            VALUES
+            (null, 'money'),
+            (null, 'faith'),
+            (null, 'Big house'),
+            (null, 'Dogs'),
+            (null, 'Cars'),
+            (null, 'God'),
+            (null, 'love'),
+            (null, 'hope'),
+            (null, 'peace'),
+            (null, 'IT Job');
+
+            INSERT INTO interests
+            VALUES
+            (null, 'technology'),
+            (null, 'beer ipa'),
+            (null, 'guitar'),
+            (null, 'learning'),
+            (null, 'SQL'),
+            (null, 'Pray'),
+            (null, 'Bible'),
+            (null, 'Church'),
+            (null, 'Runing'),
+            (null, 'Sport');
+
+            INSERT INTO profession
+            VALUES
+            (null, 'Architect'),
+            (null, 'Accountant'),
+            (null, 'Graphic Designer'),
+            (null, 'Veterinarian'),
+            (null, 'Software Developer'),
+            (null, 'Electrician'),
+            (null, 'Chef'),
+            (null, 'Nurse'),
+            (null, 'Marketing Manager'),
+            (null, 'Landscape Designer');
+
+            INSERT INTO zip_code
+            VALUES
+            (10001, 'NY', 'New York'),
+            (90001, 'LA', 'Los Angeles'),
+            (60601, 'CC', 'Chicago'),
+            (77001, 'HS', 'Houston'),
+            (85001, 'PX', 'Phoenix'),
+            (19101, 'PD', 'Philadelphia'),
+            (78201, 'SA', 'San Antonio'),
+            (92101, 'SD', 'San Diego'),
+            (75201, 'DLL', 'Dallas'),
+            (95101, 'SJ', 'San Jose');
+
+            INSERT INTO status
+            VALUES
+            (null, 'married'),
+            (null, 'single'),
+            (null, 'Priest'),
+            (null, 'Follower'),
+            (null, 'Free'),
+            (null, 'Happy'),
+            (null, 'Sad'),
+            (null, 'Polly'),
+            (null, 'Simple'),
+            (null, 'Honest');
+
+            INSERT INTO contact_interest (contact_id, interest_id) 
+            SELECT mc.contact_id, i.interest_id 
+            FROM my_contacts mc 
+            INNER JOIN interests i 
+            ON mc.contact_id = i.interest_id;
+
+
+
         </div>
 
         <div class="skew-c"></div>
