@@ -169,7 +169,7 @@
 
         <li>
             <a href="#section9">
-                <p class="menu_sql">Chapter 9: </p>
+                <p class="menu_sql">Chapter 9: Subqueries - Queries Within Queries</p>
             </a>
         </li>
 
@@ -593,11 +593,13 @@
             <p>FROM cookie_sales</p>
             <p><b class="b_u">GROUP BY</b> first_name</p>
             <p>ORDER BY SUM(colum_name)</p>
+            <p><i>Since GROUP BY automatically eliminates duplicates within each group, it achieves the same result as DISTINCT </i></p>
             <br>
             
             <h3>keyword <b class="b_u">DISTINCT</b> to get rid of duplications:</h3>
             <p>SELECT <b class="b_u">DISTINCT</b> sale_date</p>
             <p>FROM cookie_sales</p>
+            <p><i>Since GROUP BY automatically eliminates duplicates within each group, it achieves the same result as DISTINCT </i></p>
             <br>
 
             <h3>keyword <b class="b_u">LIMIT</b>:</h3>
@@ -701,9 +703,10 @@
             <br>
 
             <br>
-            <h3>Cartesian join or Cartesian product or Cross Product or Cross Join or “no join.”:</h3>
+            <h3>Cartesian join or Cartesian product or Cross Product or Cross Join or “no join.” or Comma Join:</h3>
             <img class="skills_icon_3" src="/img/SQL/cross_join.png" alt="logo">
             <p>The Cartesian join takes each value in from the first table and pairs it up with each value from the second table.</p>
+            <p><i>COMMA JOIN The same thing as a CROSS JOIN, except a comma is used instead of the keywords CROSS JOIN</i></p>
             <br>
 
             <br>
@@ -725,8 +728,9 @@
             <p>There’s only one kind of inner join left, and it’s called a natural join. Natural joins only work if the column you’re joining by has the same name in both tables. Consider these two tables again.</p>
             <br>
 
-            <p>He died but he is still alive !</p>
+            <p>He died but he is alive !</p>
 
+            <!--
             FOR DOCUMATION PROJECT:    
 
             CREATE TABLE profession
@@ -876,14 +880,18 @@
             FROM my_contacts mc 
             INNER JOIN interests i 
             ON mc.contact_id = i.interest_id;
+            -->
 
-
+            <br>
+            <h3>Left Join, Right Join, Inner Join, Outer (Full) Join - Types of joins SQL:</h3>
+            <img class="skills_icon_3" src="/img/SQL/types_of_joins_sql.png" alt="logo">
+            <br>
 
         </div>
 
         <div class="skew-c"></div>
         <div class="colour-block">
-        <h3 class="underlined-italic" id="section9"><i>Chapter 9: </i></h3>
+        <h3 class="underlined-italic" id="section9"><i>Chapter 9: Subqueries - Queries Within Queries</i></h3>
 
             <br>
 
