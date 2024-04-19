@@ -113,13 +113,13 @@ label #cancel {
 
 
 .links {
-    color: #b5d4e2;
+    color: #2c94c4;
     font-weight: 700;
     cursor: pointer;
 }
 
 .links:hover {
-    color: #cce3ed;
+    color: #e2a90c;
     font-size: large;
     
 }
