@@ -834,3 +834,33 @@ body.scroll-down .scroll-to-top {
 .hero-gif img:hover {
     transform: scale(1.03);
 }
+
+/* Cable management before and after site by site photos */
+
+.before-after {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+}
+
+.image-card {
+    text-align: center;
+}
+
+.image-card img {
+    width: 350px;
+    max-width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+    transition: transform 0.3s ease;
+}
+
+.image-card img:hover {
+    transform: scale(1.03);
+}
+
+.image-card h3 {
+    margin-bottom: 15px;
+}
